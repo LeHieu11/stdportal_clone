@@ -49,7 +49,7 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.User.RequireUniqueEmail = false;
 });
 
-
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -60,9 +60,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+//identity core thing
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapIdentityApi<SinhVien>();
+
+//my own controllers
+app.MapControllers();
 
 app.UseHttpsRedirection();
 
