@@ -94,8 +94,9 @@ namespace API.Migrations
                     b.Property<DateTimeOffset?>("DeletedTime")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<int>("HK")
-                        .HasColumnType("int");
+                    b.Property<string>("HocKy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");

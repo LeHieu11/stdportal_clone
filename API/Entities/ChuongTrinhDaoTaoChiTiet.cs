@@ -8,7 +8,7 @@ namespace API.Entities
     {
         [Key]
         public string ChuongTrinhDaoTaoChiTietId { get; set; }
-        public int HK { get; set; }
+        public string HocKy { get; set; }
         
         [ForeignKey("ChuongTrinhChiTietId")]
         public string ChuongTrinhDaoTaoId { get; set; }
