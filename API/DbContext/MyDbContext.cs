@@ -22,6 +22,7 @@ namespace API.DbContext
         public DbSet<RangBuocMonHoc> RangBuocMonHoc { get; set; }
         public DbSet<SinhVien> SinhVien{ get; set; }
         public DbSet<SinhVienVaChuongTrinhDaoTao> SinhVienVaChuongTrinhDaoTao { get; set; }
+        public DbSet<Diem> Diem { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
