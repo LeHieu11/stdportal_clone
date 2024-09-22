@@ -11,10 +11,9 @@ namespace API.Controllers
         private MyDbContext _dbContext;
         private readonly ILogger<MonHocController> _logger;
 
-        public MonHocController(MyDbContext dbContext, ILogger<MonHocController> logger) 
+        public MonHocController(MyDbContext dbContext) 
         {
             _dbContext = dbContext;
-            _logger = logger;
         }
 
         [HttpGet("{id}")]
