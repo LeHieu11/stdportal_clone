@@ -17,14 +17,8 @@ namespace API.Controllers
             _logger = logger;
         }
 
-        [HttpGet("Test")]
-        public async Task<ActionResult<string>> Get()
-        {
-            return Ok("YES");
-        }
-
         [HttpGet("{id}")]
-        public async Task<ActionResult<MonHoc>> GetById(string id)
+        public async Task<ActionResult<MonHoc>> GetMonHocByMaMonHoc(string id)
         {
             var monHoc = await _dbContext.MonHoc.FindAsync(id);
 
