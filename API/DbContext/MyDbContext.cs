@@ -23,12 +23,12 @@ namespace API.DbContext
         public DbSet<SinhVien> SinhVien{ get; set; }
         public DbSet<SinhVienVaChuongTrinhDaoTao> SinhVienVaChuongTrinhDaoTao { get; set; }
         public DbSet<Diem> Diem { get; set; }
+        public DbSet<RangBuocMonHocChiTiet> RangBuocMonHocChiTiet { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            //your define
+            
         }
     }
 }

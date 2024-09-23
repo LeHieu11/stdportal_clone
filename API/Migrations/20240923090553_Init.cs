@@ -30,12 +30,12 @@ namespace API.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
                     DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsActive = table.Column<bool>(type: "bit", nullable: false),
                     IsDelete = table.Column<bool>(type: "bit", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -66,12 +66,12 @@ namespace API.Migrations
                     HeDaoTao = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Nganh = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ChuyenNganh = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
                     DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsActive = table.Column<bool>(type: "bit", nullable: false),
                     IsDelete = table.Column<bool>(type: "bit", nullable: false)
                 },
@@ -81,47 +81,43 @@ namespace API.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "MonHoc",
-                columns: table => new
-                {
-                    MaMonHoc = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    TenMonHoc = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MoTa = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    TinChi = table.Column<int>(type: "int", nullable: false),
-                    TinChiLyThuyet = table.Column<int>(type: "int", nullable: false),
-                    TinChiThucHanh = table.Column<int>(type: "int", nullable: false),
-                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false),
-                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_MonHoc", x => x.MaMonHoc);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "NhomMonHoc",
                 columns: table => new
                 {
                     NhomMonHocId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     TenNhom = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
                     DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsActive = table.Column<bool>(type: "bit", nullable: false),
                     IsDelete = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_NhomMonHoc", x => x.NhomMonHocId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "RangBuocMonHoc",
+                columns: table => new
+                {
+                    RangBuocMonHocId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    LoaiRangBuoc = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false),
+                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RangBuocMonHoc", x => x.RangBuocMonHocId);
                 });
 
             migrationBuilder.CreateTable(
@@ -237,12 +233,12 @@ namespace API.Migrations
                     UserName = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     ChuongTrinhDaoTaoId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     SinhVienId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
                     DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsActive = table.Column<bool>(type: "bit", nullable: false),
                     IsDelete = table.Column<bool>(type: "bit", nullable: false)
                 },
@@ -264,114 +260,17 @@ namespace API.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ChuongTrinhDaoTaoChiTiet",
-                columns: table => new
-                {
-                    ChuongTrinhDaoTaoChiTietId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    HocKy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ChuongTrinhDaoTaoId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    MaMonHoc = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MonHocMaMonHoc = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false),
-                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ChuongTrinhDaoTaoChiTiet", x => x.ChuongTrinhDaoTaoChiTietId);
-                    table.ForeignKey(
-                        name: "FK_ChuongTrinhDaoTaoChiTiet_ChuongTrinhDaoTao_ChuongTrinhDaoTaoId",
-                        column: x => x.ChuongTrinhDaoTaoId,
-                        principalTable: "ChuongTrinhDaoTao",
-                        principalColumn: "ChuongTrinhDaoTaoId",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_ChuongTrinhDaoTaoChiTiet_MonHoc_MonHocMaMonHoc",
-                        column: x => x.MonHocMaMonHoc,
-                        principalTable: "MonHoc",
-                        principalColumn: "MaMonHoc",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "HocPhi",
-                columns: table => new
-                {
-                    HocPhiId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    NamHoc = table.Column<int>(type: "int", nullable: false),
-                    SoTien = table.Column<int>(type: "int", nullable: false),
-                    MaMonHoc = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MonHocMaMonHoc = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false),
-                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_HocPhi", x => x.HocPhiId);
-                    table.ForeignKey(
-                        name: "FK_HocPhi_MonHoc_MonHocMaMonHoc",
-                        column: x => x.MonHocMaMonHoc,
-                        principalTable: "MonHoc",
-                        principalColumn: "MaMonHoc",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "RangBuocMonHoc",
-                columns: table => new
-                {
-                    MaMonHoc = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    MaMonHocRangBuoc = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    LoaiRangBuoc = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MonHocRangBuocMaMonHoc = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false),
-                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_RangBuocMonHoc", x => new { x.MaMonHoc, x.MaMonHocRangBuoc });
-                    table.ForeignKey(
-                        name: "FK_RangBuocMonHoc_MonHoc_MaMonHoc",
-                        column: x => x.MaMonHoc,
-                        principalTable: "MonHoc",
-                        principalColumn: "MaMonHoc",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_RangBuocMonHoc_MonHoc_MonHocRangBuocMaMonHoc",
-                        column: x => x.MonHocRangBuocMaMonHoc,
-                        principalTable: "MonHoc",
-                        principalColumn: "MaMonHoc");
-                });
-
-            migrationBuilder.CreateTable(
                 name: "ChuongTrinhDaoTaoVaNhomMonHoc",
                 columns: table => new
                 {
                     ChuongTrinhDaoTaoId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     NhomMonHocId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
                     DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsActive = table.Column<bool>(type: "bit", nullable: false),
                     IsDelete = table.Column<bool>(type: "bit", nullable: false)
                 },
@@ -393,17 +292,151 @@ namespace API.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "MonHoc",
+                columns: table => new
+                {
+                    MaMonHoc = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    TenMonHoc = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MoTa = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TinChi = table.Column<int>(type: "int", nullable: false),
+                    TinChiLyThuyet = table.Column<int>(type: "int", nullable: false),
+                    TinChiThucHanh = table.Column<int>(type: "int", nullable: false),
+                    RangBuocMonHocId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false),
+                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MonHoc", x => x.MaMonHoc);
+                    table.ForeignKey(
+                        name: "FK_MonHoc_RangBuocMonHoc_RangBuocMonHocId",
+                        column: x => x.RangBuocMonHocId,
+                        principalTable: "RangBuocMonHoc",
+                        principalColumn: "RangBuocMonHocId");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ChuongTrinhDaoTaoChiTiet",
+                columns: table => new
+                {
+                    ChuongTrinhDaoTaoChiTietId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    HocKy = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ChuongTrinhDaoTaoId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    MaMonHoc = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MonHocMaMonHoc = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false),
+                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ChuongTrinhDaoTaoChiTiet", x => x.ChuongTrinhDaoTaoChiTietId);
+                    table.ForeignKey(
+                        name: "FK_ChuongTrinhDaoTaoChiTiet_ChuongTrinhDaoTao_ChuongTrinhDaoTaoId",
+                        column: x => x.ChuongTrinhDaoTaoId,
+                        principalTable: "ChuongTrinhDaoTao",
+                        principalColumn: "ChuongTrinhDaoTaoId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ChuongTrinhDaoTaoChiTiet_MonHoc_MonHocMaMonHoc",
+                        column: x => x.MonHocMaMonHoc,
+                        principalTable: "MonHoc",
+                        principalColumn: "MaMonHoc",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Diem",
+                columns: table => new
+                {
+                    DiemId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SinhVienId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    MaMonHoc = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MonHocMaMonHoc = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    TongKet = table.Column<double>(type: "float", nullable: false),
+                    QuaTrinh1 = table.Column<double>(type: "float", nullable: false),
+                    QuaTrinh2 = table.Column<double>(type: "float", nullable: false),
+                    GiuaKy = table.Column<double>(type: "float", nullable: false),
+                    CuoiKy = table.Column<double>(type: "float", nullable: false),
+                    HocKy = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false),
+                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Diem", x => x.DiemId);
+                    table.ForeignKey(
+                        name: "FK_Diem_AspNetUsers_SinhVienId",
+                        column: x => x.SinhVienId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Diem_MonHoc_MonHocMaMonHoc",
+                        column: x => x.MonHocMaMonHoc,
+                        principalTable: "MonHoc",
+                        principalColumn: "MaMonHoc",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "HocPhi",
+                columns: table => new
+                {
+                    HocPhiId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    NamHoc = table.Column<int>(type: "int", nullable: false),
+                    SoTien = table.Column<int>(type: "int", nullable: false),
+                    MaMonHoc = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MonHocMaMonHoc = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false),
+                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_HocPhi", x => x.HocPhiId);
+                    table.ForeignKey(
+                        name: "FK_HocPhi_MonHoc_MonHocMaMonHoc",
+                        column: x => x.MonHocMaMonHoc,
+                        principalTable: "MonHoc",
+                        principalColumn: "MaMonHoc",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "NhomMonHocVaMonHoc",
                 columns: table => new
                 {
                     NhomMonHocId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     MaMonHoc = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
                     DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsActive = table.Column<bool>(type: "bit", nullable: false),
                     IsDelete = table.Column<bool>(type: "bit", nullable: false)
                 },
@@ -421,6 +454,39 @@ namespace API.Migrations
                         column: x => x.NhomMonHocId,
                         principalTable: "NhomMonHoc",
                         principalColumn: "NhomMonHocId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "RangBuocMonHocChiTiet",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    RangBuocMonHocId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    MonHocRangBuocId = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MonHocMaMonHoc = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    CreatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    LastUpdatedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    DeletedTime = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastUpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false),
+                    IsDelete = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RangBuocMonHocChiTiet", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_RangBuocMonHocChiTiet_MonHoc_MonHocMaMonHoc",
+                        column: x => x.MonHocMaMonHoc,
+                        principalTable: "MonHoc",
+                        principalColumn: "MaMonHoc");
+                    table.ForeignKey(
+                        name: "FK_RangBuocMonHocChiTiet_RangBuocMonHoc_RangBuocMonHocId",
+                        column: x => x.RangBuocMonHocId,
+                        principalTable: "RangBuocMonHoc",
+                        principalColumn: "RangBuocMonHocId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -479,9 +545,24 @@ namespace API.Migrations
                 column: "NhomMonHocId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Diem_MonHocMaMonHoc",
+                table: "Diem",
+                column: "MonHocMaMonHoc");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Diem_SinhVienId",
+                table: "Diem",
+                column: "SinhVienId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_HocPhi_MonHocMaMonHoc",
                 table: "HocPhi",
                 column: "MonHocMaMonHoc");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MonHoc_RangBuocMonHocId",
+                table: "MonHoc",
+                column: "RangBuocMonHocId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_NhomMonHocVaMonHoc_MaMonHoc",
@@ -489,9 +570,14 @@ namespace API.Migrations
                 column: "MaMonHoc");
 
             migrationBuilder.CreateIndex(
-                name: "IX_RangBuocMonHoc_MonHocRangBuocMaMonHoc",
-                table: "RangBuocMonHoc",
-                column: "MonHocRangBuocMaMonHoc");
+                name: "IX_RangBuocMonHocChiTiet_MonHocMaMonHoc",
+                table: "RangBuocMonHocChiTiet",
+                column: "MonHocMaMonHoc");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_RangBuocMonHocChiTiet_RangBuocMonHocId",
+                table: "RangBuocMonHocChiTiet",
+                column: "RangBuocMonHocId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_SinhVienVaChuongTrinhDaoTao_ChuongTrinhDaoTaoId",
@@ -529,13 +615,16 @@ namespace API.Migrations
                 name: "ChuongTrinhDaoTaoVaNhomMonHoc");
 
             migrationBuilder.DropTable(
+                name: "Diem");
+
+            migrationBuilder.DropTable(
                 name: "HocPhi");
 
             migrationBuilder.DropTable(
                 name: "NhomMonHocVaMonHoc");
 
             migrationBuilder.DropTable(
-                name: "RangBuocMonHoc");
+                name: "RangBuocMonHocChiTiet");
 
             migrationBuilder.DropTable(
                 name: "SinhVienVaChuongTrinhDaoTao");
@@ -554,6 +643,9 @@ namespace API.Migrations
 
             migrationBuilder.DropTable(
                 name: "ChuongTrinhDaoTao");
+
+            migrationBuilder.DropTable(
+                name: "RangBuocMonHoc");
         }
     }
 }

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20240921135845_Init")]
+    [Migration("20240923090553_Init")]
     partial class Init
     {
         /// <inheritdoc />
@@ -35,14 +35,12 @@ namespace API.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("CreatedTime")
+                    b.Property<DateTimeOffset?>("CreatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("DeletedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTimeOffset?>("DeletedTime")
@@ -59,10 +57,9 @@ namespace API.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("LastUpdatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("LastUpdatedTime")
+                    b.Property<DateTimeOffset?>("LastUpdatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("Nganh")
@@ -84,14 +81,12 @@ namespace API.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("CreatedTime")
+                    b.Property<DateTimeOffset?>("CreatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("DeletedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTimeOffset?>("DeletedTime")
@@ -108,10 +103,9 @@ namespace API.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("LastUpdatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("LastUpdatedTime")
+                    b.Property<DateTimeOffset?>("LastUpdatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("MaMonHoc")
@@ -140,14 +134,12 @@ namespace API.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("CreatedTime")
+                    b.Property<DateTimeOffset?>("CreatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("DeletedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTimeOffset?>("DeletedTime")
@@ -160,10 +152,9 @@ namespace API.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("LastUpdatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("LastUpdatedTime")
+                    b.Property<DateTimeOffset?>("LastUpdatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.HasKey("ChuongTrinhDaoTaoId", "NhomMonHocId");
@@ -173,20 +164,90 @@ namespace API.Migrations
                     b.ToTable("ChuongTrinhDaoTaoVaNhomMonHoc");
                 });
 
+            modelBuilder.Entity("API.Entities.Diem", b =>
+                {
+                    b.Property<string>("DiemId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTimeOffset?>("CreatedTime")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<double>("CuoiKy")
+                        .HasColumnType("float");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTimeOffset?>("DeletedTime")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<double>("GiuaKy")
+                        .HasColumnType("float");
+
+                    b.Property<string>("HocKy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("LastUpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTimeOffset?>("LastUpdatedTime")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("MaMonHoc")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MonHocMaMonHoc")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<double>("QuaTrinh1")
+                        .HasColumnType("float");
+
+                    b.Property<double>("QuaTrinh2")
+                        .HasColumnType("float");
+
+                    b.Property<string>("SinhVienId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<double>("TongKet")
+                        .HasColumnType("float");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("DiemId");
+
+                    b.HasIndex("MonHocMaMonHoc");
+
+                    b.HasIndex("SinhVienId");
+
+                    b.ToTable("Diem");
+                });
+
             modelBuilder.Entity("API.Entities.HocPhi", b =>
                 {
                     b.Property<string>("HocPhiId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("CreatedTime")
+                    b.Property<DateTimeOffset?>("CreatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("DeletedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTimeOffset?>("DeletedTime")
@@ -199,10 +260,9 @@ namespace API.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("LastUpdatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("LastUpdatedTime")
+                    b.Property<DateTimeOffset?>("LastUpdatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("MaMonHoc")
@@ -232,14 +292,12 @@ namespace API.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("CreatedTime")
+                    b.Property<DateTimeOffset?>("CreatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("DeletedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTimeOffset?>("DeletedTime")
@@ -252,15 +310,17 @@ namespace API.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("LastUpdatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("LastUpdatedTime")
+                    b.Property<DateTimeOffset?>("LastUpdatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("MoTa")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RangBuocMonHocId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("TenMonHoc")
                         .IsRequired()
@@ -277,6 +337,8 @@ namespace API.Migrations
 
                     b.HasKey("MaMonHoc");
 
+                    b.HasIndex("RangBuocMonHocId");
+
                     b.ToTable("MonHoc");
                 });
 
@@ -286,14 +348,12 @@ namespace API.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("CreatedTime")
+                    b.Property<DateTimeOffset?>("CreatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("DeletedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTimeOffset?>("DeletedTime")
@@ -306,10 +366,9 @@ namespace API.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("LastUpdatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("LastUpdatedTime")
+                    b.Property<DateTimeOffset?>("LastUpdatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("TenNhom")
@@ -330,14 +389,12 @@ namespace API.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("CreatedTime")
+                    b.Property<DateTimeOffset?>("CreatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("DeletedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTimeOffset?>("DeletedTime")
@@ -350,10 +407,9 @@ namespace API.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("LastUpdatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("LastUpdatedTime")
+                    b.Property<DateTimeOffset?>("LastUpdatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.HasKey("NhomMonHocId", "MaMonHoc");
@@ -365,21 +421,16 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Entities.RangBuocMonHoc", b =>
                 {
-                    b.Property<string>("MaMonHoc")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("MaMonHocRangBuoc")
+                    b.Property<string>("RangBuocMonHocId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("CreatedTime")
+                    b.Property<DateTimeOffset?>("CreatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("DeletedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTimeOffset?>("DeletedTime")
@@ -392,24 +443,67 @@ namespace API.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("LastUpdatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("LastUpdatedTime")
+                    b.Property<DateTimeOffset?>("LastUpdatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("LoaiRangBuoc")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("MonHocRangBuocMaMonHoc")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("MaMonHoc", "MaMonHocRangBuoc");
-
-                    b.HasIndex("MonHocRangBuocMaMonHoc");
+                    b.HasKey("RangBuocMonHocId");
 
                     b.ToTable("RangBuocMonHoc");
+                });
+
+            modelBuilder.Entity("API.Entities.RangBuocMonHocChiTiet", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTimeOffset?>("CreatedTime")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTimeOffset?>("DeletedTime")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("LastUpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTimeOffset?>("LastUpdatedTime")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("MonHocMaMonHoc")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("MonHocRangBuocId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RangBuocMonHocId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MonHocMaMonHoc");
+
+                    b.HasIndex("RangBuocMonHocId");
+
+                    b.ToTable("RangBuocMonHocChiTiet");
                 });
 
             modelBuilder.Entity("API.Entities.SinhVien", b =>
@@ -425,14 +519,12 @@ namespace API.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("CreatedTime")
+                    b.Property<DateTimeOffset?>("CreatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("DeletedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTimeOffset?>("DeletedTime")
@@ -452,10 +544,9 @@ namespace API.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("LastUpdatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("LastUpdatedTime")
+                    b.Property<DateTimeOffset?>("LastUpdatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<bool>("LockoutEnabled")
@@ -513,14 +604,12 @@ namespace API.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CreatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("CreatedTime")
+                    b.Property<DateTimeOffset?>("CreatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("DeletedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTimeOffset?>("DeletedTime")
@@ -533,10 +622,9 @@ namespace API.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("LastUpdatedBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTimeOffset>("LastUpdatedTime")
+                    b.Property<DateTimeOffset?>("LastUpdatedTime")
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("SinhVienId")
@@ -723,6 +811,23 @@ namespace API.Migrations
                     b.Navigation("NhomMonHoc");
                 });
 
+            modelBuilder.Entity("API.Entities.Diem", b =>
+                {
+                    b.HasOne("API.Entities.MonHoc", "MonHoc")
+                        .WithMany()
+                        .HasForeignKey("MonHocMaMonHoc")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("API.Entities.SinhVien", "SinhVien")
+                        .WithMany("Diems")
+                        .HasForeignKey("SinhVienId");
+
+                    b.Navigation("MonHoc");
+
+                    b.Navigation("SinhVien");
+                });
+
             modelBuilder.Entity("API.Entities.HocPhi", b =>
                 {
                     b.HasOne("API.Entities.MonHoc", "MonHoc")
@@ -732,6 +837,15 @@ namespace API.Migrations
                         .IsRequired();
 
                     b.Navigation("MonHoc");
+                });
+
+            modelBuilder.Entity("API.Entities.MonHoc", b =>
+                {
+                    b.HasOne("API.Entities.RangBuocMonHoc", "RangBuocMonHoc")
+                        .WithMany()
+                        .HasForeignKey("RangBuocMonHocId");
+
+                    b.Navigation("RangBuocMonHoc");
                 });
 
             modelBuilder.Entity("API.Entities.NhomMonHocVaMonHoc", b =>
@@ -753,21 +867,21 @@ namespace API.Migrations
                     b.Navigation("NhomMonHoc");
                 });
 
-            modelBuilder.Entity("API.Entities.RangBuocMonHoc", b =>
+            modelBuilder.Entity("API.Entities.RangBuocMonHocChiTiet", b =>
                 {
                     b.HasOne("API.Entities.MonHoc", "MonHoc")
                         .WithMany()
-                        .HasForeignKey("MaMonHoc")
+                        .HasForeignKey("MonHocMaMonHoc");
+
+                    b.HasOne("API.Entities.RangBuocMonHoc", "RangBuocMonHoc")
+                        .WithMany("RangBuocMonHocChiTiets")
+                        .HasForeignKey("RangBuocMonHocId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("API.Entities.MonHoc", "MonHocRangBuoc")
-                        .WithMany()
-                        .HasForeignKey("MonHocRangBuocMaMonHoc");
-
                     b.Navigation("MonHoc");
 
-                    b.Navigation("MonHocRangBuoc");
+                    b.Navigation("RangBuocMonHoc");
                 });
 
             modelBuilder.Entity("API.Entities.SinhVienVaChuongTrinhDaoTao", b =>
@@ -855,6 +969,16 @@ namespace API.Migrations
             modelBuilder.Entity("API.Entities.NhomMonHoc", b =>
                 {
                     b.Navigation("NhomMonHocVaMonHocs");
+                });
+
+            modelBuilder.Entity("API.Entities.RangBuocMonHoc", b =>
+                {
+                    b.Navigation("RangBuocMonHocChiTiets");
+                });
+
+            modelBuilder.Entity("API.Entities.SinhVien", b =>
+                {
+                    b.Navigation("Diems");
                 });
 #pragma warning restore 612, 618
         }

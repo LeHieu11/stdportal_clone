@@ -16,8 +16,6 @@ namespace API.Entities
         //relationship
         public ICollection<HocPhi> HocPhis { get; set;} = [];
         public ICollection<NhomMonHocVaMonHoc>? NhomMonHocVaMonHocs{ get; set;}
-
-        // public ICollection<RangBuoc>? MonRangBuocs { get; set;}
-        // public ICollection<RangBuoc>? MonBiRangBuocs { get; set;}
+        public RangBuocMonHoc? RangBuocMonHoc { get; set; }
     }
 }

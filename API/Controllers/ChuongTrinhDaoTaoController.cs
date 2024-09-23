@@ -94,22 +94,6 @@ namespace API.Controllers
             return CreatedAtAction("GetChuongTrinhDaoTao", new { id = chuongTrinhDaoTao.ChuongTrinhDaoTaoId }, chuongTrinhDaoTao);
         }
 
-        // DELETE: api/ChuongTrinhDaoTao/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteChuongTrinhDaoTao(string id)
-        {
-            var chuongTrinhDaoTao = await _context.ChuongTrinhDaoTao.FindAsync(id);
-            if (chuongTrinhDaoTao == null)
-            {
-                return NotFound();
-            }
-
-            _context.ChuongTrinhDaoTao.Remove(chuongTrinhDaoTao);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
-
         private bool ChuongTrinhDaoTaoExists(string id)
         {
             return _context.ChuongTrinhDaoTao.Any(e => e.ChuongTrinhDaoTaoId == id);
