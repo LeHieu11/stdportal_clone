@@ -49,7 +49,11 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.User.RequireUniqueEmail = false;
 });
 
+// Add controller api endpoint
 builder.Services.AddControllers();
+
+// Add Auto Mapper
+builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
 var app = builder.Build();
 

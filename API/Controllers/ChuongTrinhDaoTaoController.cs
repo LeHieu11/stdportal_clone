@@ -18,7 +18,8 @@ namespace API.Controllers
 
         // GET: api/ChuongTrinhDaoTao
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ChuongTrinhDaoTao>>> GetChuongTrinhDaoTao()
+        public async Task<ActionResult<IEnumerable<ChuongTrinhDaoTao>>> 
+        GetChuongTrinhDaoTao()
         {
             return await _context.ChuongTrinhDaoTao.ToListAsync();
         }

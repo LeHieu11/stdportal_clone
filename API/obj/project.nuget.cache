@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ju7zSAjCsgE3Y2lTQ8N4yaE+t5u7j+kpDyv11hYIGM78TERoveM6rM2qeeazpokjpFSKVyJgl9Ix3dlZ2wKHdw==",
+  "dgSpecHash": "WYt2EMfGTjXn/R9O0aLiR5o/BTjD/B/bbwPRIAgnJOrJumkHKvnf9FKuYPQEjRHmpGrVmykbnXGMznKHC8Ns0A==",
   "success": true,
   "projectFilePath": "D:\\Pain\\Practice\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
