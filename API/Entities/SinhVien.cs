@@ -17,6 +17,6 @@ public class SinhVien : IdentityUser, IBaseEntity
     public bool IsDelete { get; set; } = false;
 
     //custom prop
-    public ICollection<Diem> Diems { get; set; }
+    public ICollection<Diem>? Diems { get; set; }
     
 }
