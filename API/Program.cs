@@ -18,9 +18,9 @@ builder.Services.AddDbContext<MyDbContext>(option =>
 });
 
 // Add authentication and authorization
-builder.Services.AddAuthorization();
 builder.Services.AddAuthentication()
     .AddCookie(IdentityConstants.ApplicationScheme);
+builder.Services.AddAuthorization();
 
 // Add Identitycore
 builder.Services.AddIdentityCore<SinhVien>(options => {})

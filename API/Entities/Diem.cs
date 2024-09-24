@@ -9,8 +9,8 @@ namespace API.Entities
         [Key]
         public required string DiemId { get; set; }
 
-        [ForeignKey("UserName")]
-        public required string UserName { get; set; }
+        [ForeignKey("SinhVienId")]
+        public required string SinhVienId { get; set; }
         public required virtual SinhVien SinhVien { get; set; }
 
         [ForeignKey("MaMonHoc")]

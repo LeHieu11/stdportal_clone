@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Entities
 {
-    [PrimaryKey(nameof(UserName), nameof(ChuongTrinhDaoTaoId))]
+    [PrimaryKey(nameof(SinhVienId), nameof(ChuongTrinhDaoTaoId))]
     public class SinhVienVaChuongTrinhDaoTao : BaseEntity
     {
-        [ForeignKey("UserName")]
-        public required string UserName { get; set; }
+        [ForeignKey("SinhVienId")]
+        public required string SinhVienId { get; set; }
         public required virtual SinhVien SinhVien { get; set; }
 
         [ForeignKey("ChuongTrinhDaoTaoId")]

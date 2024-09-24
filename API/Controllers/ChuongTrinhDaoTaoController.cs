@@ -24,8 +24,16 @@ namespace API.Controllers
         public async Task<ActionResult<ChuongTrinhDaoTaoDTO>> 
         GetChuongTrinhDaoTao(string userName)
         {
+            //Find that sinh vien record by username
+            var sinhVien = await _context.SinhVien
+                .Where(sv => sv.UserName == userName)
+                .FirstOrDefaultAsync();
+
+            if (sinhVien == null) return NotFound();
+
+            //get CTDT of sinh vien by sinhvienId
             var listCTDT = await _context.SinhVienVaChuongTrinhDaoTao
-                .Where(x => x.UserName == userName)
+                .Where(x => x.SinhVienId == sinhVien.Id)
                 .ToListAsync();
 
             if (listCTDT == null) return NotFound();
