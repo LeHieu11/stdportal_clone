@@ -8,11 +8,11 @@ namespace API.Entities
     public class ChuongTrinhDaoTaoVaNhomMonHoc : BaseEntity
     {
         [ForeignKey("ChuongTrinhDaoTaoId")]
-        public string ChuongTrinhDaoTaoId { get; set; }
-        public virtual ChuongTrinhDaoTao ChuongTrinhDaoTao { get; set; }
+        public required string ChuongTrinhDaoTaoId { get; set; }
+        public required virtual ChuongTrinhDaoTao ChuongTrinhDaoTao { get; set; }
 
         [ForeignKey("NhomMonHocId")]
-        public string NhomMonHocId { get; set; }
-        public virtual NhomMonHoc NhomMonHoc { get; set; }
+        public required string NhomMonHocId { get; set; }
+        public required virtual NhomMonHoc NhomMonHoc { get; set; }
     }
 }

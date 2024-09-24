@@ -7,15 +7,15 @@ namespace API.Entities
     public class ChuongTrinhDaoTaoChiTiet : BaseEntity
     {
         [Key]
-        public string ChuongTrinhDaoTaoChiTietId { get; set; }
-        public string HocKy { get; set; }
+        public required string ChuongTrinhDaoTaoChiTietId { get; set; }
+        public string HocKy { get; set; } = string.Empty;
         
         [ForeignKey("ChuongTrinhChiTietId")]
-        public string ChuongTrinhDaoTaoId { get; set; }
-        public virtual ChuongTrinhDaoTao ChuongTrinhDaoTao { get; set; }
+        public required string ChuongTrinhDaoTaoId { get; set; }
+        public virtual required ChuongTrinhDaoTao ChuongTrinhDaoTao { get; set; }
 
         [ForeignKey("MaMonHoc")]
-        public string MaMonHoc { get; set; }
-        public virtual MonHoc MonHoc { get; set; }  
+        public required string MaMonHoc { get; set; }
+        public virtual required MonHoc MonHoc { get; set; }  
     }
 }

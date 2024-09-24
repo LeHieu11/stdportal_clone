@@ -6,7 +6,7 @@ namespace API.Entities
     public class NhomMonHoc : BaseEntity
     {
         [Key]
-        public string NhomMonHocId { get; set; }
+        public required string NhomMonHocId { get; set; }
         public string TenNhom { get; set; } = string.Empty;
 
         //relationship

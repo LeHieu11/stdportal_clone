@@ -2,7 +2,7 @@ namespace API.DTOs
 {
     public class MonHocDTO
     {
-        public string MaMonHoc {get; set;}
+        public required string MaMonHoc {get; set;}
         public string TenMonHoc { get; set; } = string.Empty;
         public string MoTa { get; set; } = string.Empty;
         public int TinChi { get; set; }

@@ -8,11 +8,11 @@ namespace API.Entities
     public class SinhVienVaChuongTrinhDaoTao : BaseEntity
     {
         [ForeignKey("UserName")]
-        public string UserName { get; set; }
-        public virtual SinhVien SinhVien { get; set; }
+        public required string UserName { get; set; }
+        public required virtual SinhVien SinhVien { get; set; }
 
         [ForeignKey("ChuongTrinhDaoTaoId")]
-        public string ChuongTrinhDaoTaoId { get; set; }
-        public virtual ChuongTrinhDaoTao ChuongTrinhDaoTao { get; set; }
+        public required string ChuongTrinhDaoTaoId { get; set; }
+        public required virtual ChuongTrinhDaoTao ChuongTrinhDaoTao { get; set; }
     }
 }

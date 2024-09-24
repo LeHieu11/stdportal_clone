@@ -6,10 +6,10 @@ namespace API.Entities
     public class ChuongTrinhDaoTao : BaseEntity
     {
         [Key]
-        public string ChuongTrinhDaoTaoId { get; set; }
-        public string HeDaoTao { get; set; }
-        public string Nganh { get; set; }
-        public string ChuyenNganh { get; set; }
+        public required string ChuongTrinhDaoTaoId { get; set; }
+        public string HeDaoTao { get; set; } = string.Empty;
+        public string Nganh { get; set; } = string.Empty;
+        public string ChuyenNganh { get; set; } = string.Empty;
         public int NienKhoa { get; set; }
 
         //relationship

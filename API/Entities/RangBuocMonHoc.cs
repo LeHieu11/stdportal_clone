@@ -6,10 +6,11 @@ namespace API.Entities
     public class RangBuocMonHoc : BaseEntity
     {
         [Key]
-        public string RangBuocMonHocId { get; set; }
-        public string LoaiRangBuoc { get; set; }
+        public required string RangBuocMonHocId { get; set; }
+        public string LoaiRangBuoc { get; set; } = string.Empty;
 
         //relationship
         public ICollection<RangBuocMonHocChiTiet> RangBuocMonHocChiTiets { get; set; }
+            = new List<RangBuocMonHocChiTiet>();
     }
 }

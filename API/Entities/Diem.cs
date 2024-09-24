@@ -10,12 +10,12 @@ namespace API.Entities
         public string DiemId { get; set; }
 
         [ForeignKey("UserName")]
-        public string UserName { get; set; }
-        public virtual SinhVien SinhVien { get; set; }
+        public required string UserName { get; set; }
+        public required virtual SinhVien SinhVien { get; set; }
 
         [ForeignKey("MaMonHoc")]
-        public string MaMonHoc { get; set; }
-        public virtual MonHoc MonHoc { get; set; }
+        public required string MaMonHoc { get; set; }
+        public required virtual MonHoc MonHoc { get; set; }
 
         public double TongKet { get; set; }
         public double QuaTrinh1 { get; set; }
@@ -23,6 +23,6 @@ namespace API.Entities
         public double GiuaKy { get; set; }
         public double CuoiKy { get; set; }
 
-        public string HocKy { get; set; }
+        public string HocKy { get; set; } = string.Empty;
     }
 }

@@ -4,8 +4,8 @@ namespace API.DTOs
 {
     public class ChuongTrinhDaoTaoChiTietDTO
     {
-        public string ChuongTrinhDaoTaoChiTietId { get; set; }
-        public string HocKy { get; set; }
-        public virtual MonHocDTO MonHoc { get; set; }  
+        public required string ChuongTrinhDaoTaoChiTietId { get; set; }
+        public string HocKy { get; set; } = string.Empty;
+        public virtual MonHocDTO? MonHoc { get; set; }  
     }
 }
