@@ -7,7 +7,7 @@ namespace API.Entities
     public class Diem : BaseEntity
     {
         [Key]
-        public string DiemId { get; set; }
+        public required string DiemId { get; set; }
 
         [ForeignKey("UserName")]
         public required string UserName { get; set; }

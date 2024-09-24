@@ -10,6 +10,6 @@ namespace API.DTOs
         public string ChuyenNganh { get; set; } = string.Empty;
 
         //relationship
-        public ICollection<ChuongTrinhDaoTaoChiTietDTO>? CTDT_ChiTiets { get; set; }
+        public ICollection<ChuongTrinhDaoTaoChiTietDTO>? ChuongTrinhDaoTaoChiTietDTOs { get; set; }
     }
 }
