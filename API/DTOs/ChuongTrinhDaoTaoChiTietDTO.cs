@@ -1,11 +1,14 @@
-using API.Entities;
-
 namespace API.DTOs
 {
     public class ChuongTrinhDaoTaoChiTietDTO
     {
-        public required string ChuongTrinhDaoTaoChiTietId { get; set; }
+        // public required string ChuongTrinhDaoTaoChiTietId { get; set; }
         public string HocKy { get; set; } = string.Empty;
-        public virtual MonHocDTO? MonHoc { get; set; }  
+        public required string MaMonHoc {get; set;}
+        public string TenMonHoc { get; set; } = string.Empty;
+        public string MoTa { get; set; } = string.Empty;
+        public int TinChi { get; set; }
+        public int TinChiLyThuyet { get; set;}
+        public int TinChiThucHanh { get; set; }
     }
 }

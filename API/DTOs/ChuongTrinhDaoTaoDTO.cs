@@ -8,6 +8,7 @@ namespace API.DTOs
         public string HeDaoTao { get; set; } = string.Empty;
         public string Nganh { get; set; } = string.Empty;
         public string ChuyenNganh { get; set; } = string.Empty;
+        public int NienKhoa { get; set; }
 
         //relationship
         public ICollection<ChuongTrinhDaoTaoChiTietDTO>? ChuongTrinhDaoTaoChiTietDTOs { get; set; }
