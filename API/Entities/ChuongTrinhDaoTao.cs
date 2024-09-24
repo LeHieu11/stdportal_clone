@@ -10,8 +10,9 @@ namespace API.Entities
         public string HeDaoTao { get; set; }
         public string Nganh { get; set; }
         public string ChuyenNganh { get; set; }
+        public int NienKhoa { get; set; }
 
         //relationship
-        public ICollection<ChuongTrinhDaoTaoChiTiet>? CTDT_ChiTiets { get; set; }
+        public ICollection<ChuongTrinhDaoTaoChiTiet>? ChuongTrinhDaoTaoChiTiets { get; set; }
     }
 }
