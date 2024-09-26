@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using API.DbContext;
-using API.Entities;
 using AutoMapper;
 using API.DTOs;
+using Microsoft.AspNetCore.Authorization;
 
 namespace API.Controllers
 {
@@ -20,6 +20,7 @@ namespace API.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<MonHocDTO>> GetMonHocByMaMonHoc(string id)
         {
             var monHoc = await _dbContext.MonHoc.FindAsync(id);
