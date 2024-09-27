@@ -76,6 +76,8 @@ namespace API.Controllers
                         .ToList()
                 })
                 .FirstOrDefaultAsync(ctdt => ctdt.ChuongTrinhDaoTaoId == id);
+
+            if (CTDT == null) return NotFound("CTDT not found");
             
             return Ok(CTDT);
         }
