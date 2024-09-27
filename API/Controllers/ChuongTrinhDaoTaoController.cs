@@ -37,7 +37,8 @@ namespace API.Controllers
             return Ok(query);
         }
 
-        [HttpGet("CTDTId/{id}")]
+        [HttpGet("/{id}")]
+        [Authorize]
         public async Task<ActionResult<ChuongTrinhDaoTao>> 
         Test(string id)
         {
