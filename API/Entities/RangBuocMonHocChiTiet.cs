@@ -14,7 +14,7 @@ namespace API.Entities
         public required virtual RangBuocMonHoc RangBuocMonHoc { get; set; }
 
         [ForeignKey("MonHocRangBuocId")]
-        public required string MonHocRangBuocId { get; set; }
+        public required string MonHocMaMonHoc { get; set; }
         public required virtual MonHoc MonHoc { get; set; }
     }
 }

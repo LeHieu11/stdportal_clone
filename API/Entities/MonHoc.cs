@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using API.Entities.Base;
 
 namespace API.Entities
@@ -14,8 +15,10 @@ namespace API.Entities
         public int TinChiThucHanh { get; set; }
 
         //relationship
-        public ICollection<HocPhi> HocPhis { get; set;} = [];
         public ICollection<NhomMonHocVaMonHoc>? NhomMonHocVaMonHocs{ get; set;}
+
+        [ForeignKey("RangBuocMonHocId")]
+        public string? RangBuocMonHocId { get; set; }
         public RangBuocMonHoc? RangBuocMonHoc { get; set; }
     }
 }

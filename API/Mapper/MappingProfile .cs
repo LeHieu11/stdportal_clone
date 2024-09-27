@@ -8,5 +8,6 @@ public class MappingProfile : Profile {
         CreateMap<MonHoc, MonHocDTO>().ReverseMap();
         CreateMap<ChuongTrinhDaoTao, ChuongTrinhDaoTaoDTO>().ReverseMap();
         CreateMap<ChuongTrinhDaoTaoChiTiet, ChuongTrinhDaoTaoChiTietDTO>().ReverseMap();
+        CreateMap<HocPhi, HocPhiDTO>().ReverseMap();
     }
 }

@@ -14,7 +14,7 @@ namespace API.Entities
         public required virtual SinhVien SinhVien { get; set; }
 
         [ForeignKey("MaMonHoc")]
-        public required string MaMonHoc { get; set; }
+        public required string MonHocMaMonHoc { get; set; }
         public required virtual MonHoc MonHoc { get; set; }
 
         public double TongKet { get; set; }

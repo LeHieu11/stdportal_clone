@@ -8,13 +8,8 @@ namespace API.Entities
     {
         [Key]
         public required string HocPhiId { get; set; }
-        public int NamHoc { get; set; }
+        public string NamHoc { get; set; } = string.Empty;
         public int SoTien { get; set; }
-
-        //relationship
-        [ForeignKey("MaMonHoc")]
-        public required string MaMonHoc { get; set; }
-        public required virtual MonHoc MonHoc { get; set; }
     }
 }
 

@@ -11,6 +11,6 @@ namespace API.DTOs
         public int NienKhoa { get; set; }
 
         //relationship
-        public ICollection<ChuongTrinhDaoTaoChiTietDTO>? ChuongTrinhDaoTaoChiTietDTOs { get; set; }
+        public ICollection<ChuongTrinhDaoTaoChiTietDTO>? ChuongTrinhDaoTaoChiTiet { get; set; }
     }
 }
