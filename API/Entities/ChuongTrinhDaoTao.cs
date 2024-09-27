@@ -13,6 +13,6 @@ namespace API.Entities
         public int NienKhoa { get; set; }
 
         //relationship
-        public ICollection<ChuongTrinhDaoTaoChiTiet>? ChuongTrinhDaoTaoChiTiets { get; set; }
+        public required ICollection<ChuongTrinhDaoTaoChiTiet> ChuongTrinhDaoTaoChiTiets { get; set; }
     }
 }

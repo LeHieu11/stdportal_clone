@@ -25,33 +25,22 @@ namespace API.Controllers
         [HttpGet("Username/{userName}")]
         [Authorize]
         public async Task<ActionResult<ChuongTrinhDaoTaoDTO>> 
-        GetChuongTrinhDaoTaoByUsername(string userName)
+        GetListChuongTrinhDaoTaoByUsername(string userName)
         {
             //Find that sinh vien record by username
-            var sinhVien = await _context.SinhVien
-                .Where(sv => sv.UserName == userName)
-                .FirstOrDefaultAsync();
-
-            if (sinhVien == null) return NotFound("False Username");
-
-            //get CTDT of sinh vien by sinhvienId
-            var listCTDT = await _context.SinhVienVaChuongTrinhDaoTao
-                .Where(x => x.SinhVienId == sinhVien.Id)
+            var query = await _context.SinhVienVaChuongTrinhDaoTao
+                .Where(svctdt => svctdt.SinhVien.UserName == userName)
                 .ToListAsync();
 
-            if (listCTDT == null) return NotFound("SinhVien not having a CTDT");
+            if (query == null) return NotFound("SinhVien not found");
 
-            if (listCTDT.Count == 0) return NoContent();
-            
-            return Ok(_mapper.Map<List<ChuongTrinhDaoTaoDTO>>(listCTDT));
+            return Ok(query);
         }
 
-        [HttpGet("test")]
+        [HttpGet("CTDTId/{id}")]
         public async Task<ActionResult<ChuongTrinhDaoTao>> 
-        Test()
+        Test(string id)
         {
-            string id = "fvcnt";
-
             var CTDT = await _context.ChuongTrinhDaoTao
                 .Select(ctdt => new ChuongTrinhDaoTaoDTO
                 {

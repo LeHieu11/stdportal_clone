@@ -73,45 +73,45 @@ namespace API.Migrations
                     b.HasData(
                         new
                         {
-                            ChuongTrinhDaoTaoId = "lsucp",
-                            ChuyenNganh = "Usability",
+                            ChuongTrinhDaoTaoId = "uafub",
+                            ChuyenNganh = "Tactics",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 845, DateTimeKind.Unspecified).AddTicks(5117), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 800, DateTimeKind.Unspecified).AddTicks(5486), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             HeDaoTao = "Đại học",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            Nganh = "Usability",
-                            NienKhoa = 2017
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoId = "fvcnt",
-                            ChuyenNganh = "Web",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 845, DateTimeKind.Unspecified).AddTicks(6826), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HeDaoTao = "Đại học",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            Nganh = "Web",
+                            Nganh = "Tactics",
                             NienKhoa = 2020
                         },
                         new
                         {
-                            ChuongTrinhDaoTaoId = "xozxj",
-                            ChuyenNganh = "Branding",
+                            ChuongTrinhDaoTaoId = "slrxs",
+                            ChuyenNganh = "Creative",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 845, DateTimeKind.Unspecified).AddTicks(6871), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 800, DateTimeKind.Unspecified).AddTicks(6586), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             HeDaoTao = "Đại học",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            Nganh = "Branding",
-                            NienKhoa = 2019
+                            Nganh = "Creative",
+                            NienKhoa = 2020
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoId = "bauih",
+                            ChuyenNganh = "Security",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 800, DateTimeKind.Unspecified).AddTicks(6625), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HeDaoTao = "Đại học",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            Nganh = "Security",
+                            NienKhoa = 2020
                         });
                 });
 
@@ -173,423 +173,423 @@ namespace API.Migrations
                     b.HasData(
                         new
                         {
-                            ChuongTrinhDaoTaoChiTietId = "eegih",
-                            ChuongTrinhDaoTaoId = "fvcnt",
+                            ChuongTrinhDaoTaoChiTietId = "awxsy",
+                            ChuongTrinhDaoTaoId = "slrxs",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(759), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "7",
-                            HocPhiId = "ihfro",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "eaveh"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "orvzm",
-                            ChuongTrinhDaoTaoId = "xozxj",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1137), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "4",
-                            HocPhiId = "lwdvn",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "feakz"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "nirpm",
-                            ChuongTrinhDaoTaoId = "fvcnt",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1157), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "7",
-                            HocPhiId = "xtcny",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "hpvsj"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "fyggh",
-                            ChuongTrinhDaoTaoId = "xozxj",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1169), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "6",
-                            HocPhiId = "qmacp",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "ywzvt"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "oihal",
-                            ChuongTrinhDaoTaoId = "xozxj",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1182), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "6",
-                            HocPhiId = "prmuo",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "fnseb"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "jynig",
-                            ChuongTrinhDaoTaoId = "lsucp",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1194), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "7",
-                            HocPhiId = "gtnlj",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "aqjww"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "vyjjo",
-                            ChuongTrinhDaoTaoId = "xozxj",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1210), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(8844), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             HocKy = "3",
-                            HocPhiId = "vwvxq",
+                            HocPhiId = "ldymi",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MonHocMaMonHoc = "aqhpq"
+                            MonHocMaMonHoc = "hlcun"
                         },
                         new
                         {
-                            ChuongTrinhDaoTaoChiTietId = "lfzzb",
-                            ChuongTrinhDaoTaoId = "fvcnt",
+                            ChuongTrinhDaoTaoChiTietId = "rjned",
+                            ChuongTrinhDaoTaoId = "uafub",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1221), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9110), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             HocKy = "3",
-                            HocPhiId = "brfxh",
+                            HocPhiId = "hmtmu",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MonHocMaMonHoc = "eqopu"
+                            MonHocMaMonHoc = "eamyl"
                         },
                         new
                         {
-                            ChuongTrinhDaoTaoChiTietId = "ncfyt",
-                            ChuongTrinhDaoTaoId = "lsucp",
+                            ChuongTrinhDaoTaoChiTietId = "gcypa",
+                            ChuongTrinhDaoTaoId = "slrxs",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1230), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9128), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             HocKy = "7",
-                            HocPhiId = "mwrxp",
+                            HocPhiId = "oghtx",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MonHocMaMonHoc = "tmmyv"
+                            MonHocMaMonHoc = "cwxik"
                         },
                         new
                         {
-                            ChuongTrinhDaoTaoChiTietId = "urnhx",
-                            ChuongTrinhDaoTaoId = "fvcnt",
+                            ChuongTrinhDaoTaoChiTietId = "lvkqe",
+                            ChuongTrinhDaoTaoId = "uafub",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1240), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9141), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             HocKy = "2",
-                            HocPhiId = "niuks",
+                            HocPhiId = "oksnk",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MonHocMaMonHoc = "hekvj"
+                            MonHocMaMonHoc = "cwxik"
                         },
                         new
                         {
-                            ChuongTrinhDaoTaoChiTietId = "dvgyu",
-                            ChuongTrinhDaoTaoId = "fvcnt",
+                            ChuongTrinhDaoTaoChiTietId = "arnxj",
+                            ChuongTrinhDaoTaoId = "uafub",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1251), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "8",
-                            HocPhiId = "qxgii",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "jodzw"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "fzwud",
-                            ChuongTrinhDaoTaoId = "lsucp",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1261), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "1",
-                            HocPhiId = "jcezo",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "gjdje"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "dqprv",
-                            ChuongTrinhDaoTaoId = "fvcnt",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1271), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "6",
-                            HocPhiId = "ghrmm",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "ofpvt"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "vniyi",
-                            ChuongTrinhDaoTaoId = "xozxj",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1281), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "3",
-                            HocPhiId = "vvmty",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "hpvsj"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "tnvor",
-                            ChuongTrinhDaoTaoId = "fvcnt",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1287), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "6",
-                            HocPhiId = "mwrxp",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "tswcu"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "jghnf",
-                            ChuongTrinhDaoTaoId = "lsucp",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1296), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9149), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             HocKy = "7",
-                            HocPhiId = "wnyhp",
+                            HocPhiId = "qpbev",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MonHocMaMonHoc = "moore"
+                            MonHocMaMonHoc = "lxkxb"
                         },
                         new
                         {
-                            ChuongTrinhDaoTaoChiTietId = "zytes",
-                            ChuongTrinhDaoTaoId = "xozxj",
+                            ChuongTrinhDaoTaoChiTietId = "ysgqk",
+                            ChuongTrinhDaoTaoId = "uafub",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1305), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "6",
-                            HocPhiId = "qwilm",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "aqhpq"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "jhzov",
-                            ChuongTrinhDaoTaoId = "xozxj",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1312), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "1",
-                            HocPhiId = "grzqc",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "feakz"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "itwnj",
-                            ChuongTrinhDaoTaoId = "xozxj",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1319), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "5",
-                            HocPhiId = "brfxh",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "jodzw"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "dskkr",
-                            ChuongTrinhDaoTaoId = "fvcnt",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1328), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "4",
-                            HocPhiId = "qwilm",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "moore"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "lpyuc",
-                            ChuongTrinhDaoTaoId = "fvcnt",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1335), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "7",
-                            HocPhiId = "kbbid",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "rvkbh"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "nhdxu",
-                            ChuongTrinhDaoTaoId = "lsucp",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1344), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "8",
-                            HocPhiId = "wnyhp",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "rvkbh"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "kgpsk",
-                            ChuongTrinhDaoTaoId = "xozxj",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1351), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9162), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             HocKy = "2",
-                            HocPhiId = "qxgii",
+                            HocPhiId = "fnuek",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MonHocMaMonHoc = "xawjt"
+                            MonHocMaMonHoc = "jxlrb"
                         },
                         new
                         {
-                            ChuongTrinhDaoTaoChiTietId = "ctsdy",
-                            ChuongTrinhDaoTaoId = "xozxj",
+                            ChuongTrinhDaoTaoChiTietId = "stiko",
+                            ChuongTrinhDaoTaoId = "bauih",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1363), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "7",
-                            HocPhiId = "uymhk",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "tswcu"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "fnsfz",
-                            ChuongTrinhDaoTaoId = "fvcnt",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1371), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "3",
-                            HocPhiId = "uymhk",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "xbzts"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "tiycb",
-                            ChuongTrinhDaoTaoId = "xozxj",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1379), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "4",
-                            HocPhiId = "xzgwd",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "gjdje"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "nbvye",
-                            ChuongTrinhDaoTaoId = "lsucp",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1387), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9172), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             HocKy = "2",
-                            HocPhiId = "qwilm",
+                            HocPhiId = "iwkyk",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MonHocMaMonHoc = "tvyrd"
+                            MonHocMaMonHoc = "euhpn"
                         },
                         new
                         {
-                            ChuongTrinhDaoTaoChiTietId = "mvoas",
-                            ChuongTrinhDaoTaoId = "fvcnt",
+                            ChuongTrinhDaoTaoChiTietId = "uggxo",
+                            ChuongTrinhDaoTaoId = "uafub",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1395), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9181), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
-                            HocKy = "8",
-                            HocPhiId = "gtnlj",
+                            HocKy = "6",
+                            HocPhiId = "mdppc",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MonHocMaMonHoc = "jodzw"
+                            MonHocMaMonHoc = "sccta"
                         },
                         new
                         {
-                            ChuongTrinhDaoTaoChiTietId = "yiokj",
-                            ChuongTrinhDaoTaoId = "lsucp",
+                            ChuongTrinhDaoTaoChiTietId = "wsuuj",
+                            ChuongTrinhDaoTaoId = "bauih",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1440), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            HocKy = "7",
-                            HocPhiId = "jpeic",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MonHocMaMonHoc = "tzyok"
-                        },
-                        new
-                        {
-                            ChuongTrinhDaoTaoChiTietId = "jwxop",
-                            ChuongTrinhDaoTaoId = "xozxj",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 848, DateTimeKind.Unspecified).AddTicks(1450), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9191), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             HocKy = "1",
-                            HocPhiId = "gnmim",
+                            HocPhiId = "afyzm",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MonHocMaMonHoc = "tmmyv"
+                            MonHocMaMonHoc = "vtzht"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "ygsxc",
+                            ChuongTrinhDaoTaoId = "uafub",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9203), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "8",
+                            HocPhiId = "fnuek",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "xafhp"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "rizgq",
+                            ChuongTrinhDaoTaoId = "uafub",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9211), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "8",
+                            HocPhiId = "weuoh",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "woatt"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "dfdoc",
+                            ChuongTrinhDaoTaoId = "uafub",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9221), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "1",
+                            HocPhiId = "ikkxs",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "nsqnb"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "apolk",
+                            ChuongTrinhDaoTaoId = "bauih",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9230), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "7",
+                            HocPhiId = "qtqjd",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "zrubd"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "nplmr",
+                            ChuongTrinhDaoTaoId = "bauih",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9238), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "6",
+                            HocPhiId = "ccdwy",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "euhpn"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "mseze",
+                            ChuongTrinhDaoTaoId = "bauih",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9246), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "6",
+                            HocPhiId = "sfolp",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "xgjli"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "yfptb",
+                            ChuongTrinhDaoTaoId = "bauih",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9253), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "3",
+                            HocPhiId = "gqqkk",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "hlcun"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "eeufj",
+                            ChuongTrinhDaoTaoId = "slrxs",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9260), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "7",
+                            HocPhiId = "oksnk",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "kwoaw"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "nyxam",
+                            ChuongTrinhDaoTaoId = "bauih",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9270), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "2",
+                            HocPhiId = "weuoh",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "vcoef"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "wzent",
+                            ChuongTrinhDaoTaoId = "slrxs",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9277), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "6",
+                            HocPhiId = "qpbev",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "zrubd"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "boiog",
+                            ChuongTrinhDaoTaoId = "bauih",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9284), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "6",
+                            HocPhiId = "ldxdb",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "edisx"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "scxmd",
+                            ChuongTrinhDaoTaoId = "uafub",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9292), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "6",
+                            HocPhiId = "mdppc",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "nsqnb"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "rwqta",
+                            ChuongTrinhDaoTaoId = "slrxs",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9299), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "7",
+                            HocPhiId = "tbasf",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "kwoaw"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "srzfp",
+                            ChuongTrinhDaoTaoId = "bauih",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9305), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "1",
+                            HocPhiId = "oghtx",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "wckpd"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "nrgms",
+                            ChuongTrinhDaoTaoId = "slrxs",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9313), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "6",
+                            HocPhiId = "tbasf",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "wckpd"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "pvjpy",
+                            ChuongTrinhDaoTaoId = "bauih",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9344), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "8",
+                            HocPhiId = "aaxwt",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "gzgzu"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "tciqx",
+                            ChuongTrinhDaoTaoId = "slrxs",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9352), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "4",
+                            HocPhiId = "xdrja",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "zrubd"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "nseub",
+                            ChuongTrinhDaoTaoId = "slrxs",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9360), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "3",
+                            HocPhiId = "ikkxs",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "edisx"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "fjull",
+                            ChuongTrinhDaoTaoId = "uafub",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9368), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "6",
+                            HocPhiId = "bhtyl",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "sdpgk"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "kfzgp",
+                            ChuongTrinhDaoTaoId = "uafub",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9377), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "4",
+                            HocPhiId = "nslxr",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "zrubd"
+                        },
+                        new
+                        {
+                            ChuongTrinhDaoTaoChiTietId = "nmssb",
+                            ChuongTrinhDaoTaoId = "uafub",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 801, DateTimeKind.Unspecified).AddTicks(9385), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            HocKy = "4",
+                            HocPhiId = "oitov",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MonHocMaMonHoc = "edisx"
                         });
                 });
 
@@ -740,363 +740,363 @@ namespace API.Migrations
                     b.HasData(
                         new
                         {
-                            HocPhiId = "kbbid",
+                            HocPhiId = "nslxr",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(1578), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(1193), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            NamHoc = "2017-2018",
-                            SoTien = 4992744
+                            NamHoc = "2016-2017",
+                            SoTien = 3530693
                         },
                         new
                         {
-                            HocPhiId = "fjlsk",
+                            HocPhiId = "mdppc",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3838), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            NamHoc = "2015-2016",
-                            SoTien = 4753994
-                        },
-                        new
-                        {
-                            HocPhiId = "lwdvn",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3885), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            NamHoc = "2019-2020",
-                            SoTien = 3434411
-                        },
-                        new
-                        {
-                            HocPhiId = "tjync",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3893), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            NamHoc = "2017-2018",
-                            SoTien = 2199818
-                        },
-                        new
-                        {
-                            HocPhiId = "mwrxp",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3900), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            NamHoc = "2015-2016",
-                            SoTien = 4004908
-                        },
-                        new
-                        {
-                            HocPhiId = "qwilm",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3907), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3114), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
                             NamHoc = "2018-2019",
-                            SoTien = 2763478
+                            SoTien = 2481079
                         },
                         new
                         {
-                            HocPhiId = "gnmim",
+                            HocPhiId = "hcxyn",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3913), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            NamHoc = "2019-2020",
-                            SoTien = 3956874
-                        },
-                        new
-                        {
-                            HocPhiId = "yiydl",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3920), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3148), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
                             NamHoc = "2015-2016",
-                            SoTien = 4938698
+                            SoTien = 1546980
                         },
                         new
                         {
-                            HocPhiId = "prmuo",
+                            HocPhiId = "pftkp",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3926), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3155), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            NamHoc = "2019-2020",
-                            SoTien = 4509581
+                            NamHoc = "2015-2016",
+                            SoTien = 2533190
                         },
                         new
                         {
-                            HocPhiId = "vwvxq",
+                            HocPhiId = "hmtmu",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3933), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3161), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
                             NamHoc = "2020-2021",
-                            SoTien = 1898070
+                            SoTien = 1537950
                         },
                         new
                         {
-                            HocPhiId = "wnyhp",
+                            HocPhiId = "oksnk",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3939), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            NamHoc = "2015-2016",
-                            SoTien = 3734406
-                        },
-                        new
-                        {
-                            HocPhiId = "xtcny",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3945), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3167), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
                             NamHoc = "2016-2017",
-                            SoTien = 3062534
+                            SoTien = 2725602
                         },
                         new
                         {
-                            HocPhiId = "oxesh",
+                            HocPhiId = "oghtx",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3951), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3172), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            NamHoc = "2019-2020",
+                            SoTien = 3465595
+                        },
+                        new
+                        {
+                            HocPhiId = "tbasf",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3178), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            NamHoc = "2016-2017",
+                            SoTien = 4040382
+                        },
+                        new
+                        {
+                            HocPhiId = "iwkyk",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3184), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            NamHoc = "2016-2017",
+                            SoTien = 3923107
+                        },
+                        new
+                        {
+                            HocPhiId = "jlvty",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3189), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
                             NamHoc = "2018-2019",
-                            SoTien = 1178039
+                            SoTien = 2677817
                         },
                         new
                         {
-                            HocPhiId = "jcezo",
+                            HocPhiId = "xdrja",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3958), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3196), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            NamHoc = "2019-2020",
+                            SoTien = 2905855
+                        },
+                        new
+                        {
+                            HocPhiId = "sfolp",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3201), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            NamHoc = "2020-2021",
+                            SoTien = 4833443
+                        },
+                        new
+                        {
+                            HocPhiId = "qtqjd",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3207), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            NamHoc = "2018-2019",
+                            SoTien = 1703222
+                        },
+                        new
+                        {
+                            HocPhiId = "oitov",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3213), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
                             NamHoc = "2017-2018",
-                            SoTien = 1897735
+                            SoTien = 2436822
                         },
                         new
                         {
-                            HocPhiId = "prpom",
+                            HocPhiId = "gqqkk",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3963), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            NamHoc = "2015-2016",
-                            SoTien = 1970671
-                        },
-                        new
-                        {
-                            HocPhiId = "vvmty",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3970), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            NamHoc = "2018-2019",
-                            SoTien = 3119215
-                        },
-                        new
-                        {
-                            HocPhiId = "jpeic",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3976), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            NamHoc = "2015-2016",
-                            SoTien = 2851970
-                        },
-                        new
-                        {
-                            HocPhiId = "gtnlj",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3982), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            NamHoc = "2016-2017",
-                            SoTien = 4539435
-                        },
-                        new
-                        {
-                            HocPhiId = "drgrh",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3988), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3218), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
                             NamHoc = "2019-2020",
-                            SoTien = 3392455
+                            SoTien = 3978023
                         },
                         new
                         {
-                            HocPhiId = "ihfro",
+                            HocPhiId = "fnuek",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(3994), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            NamHoc = "2016-2017",
-                            SoTien = 1757378
-                        },
-                        new
-                        {
-                            HocPhiId = "uymhk",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(4000), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            NamHoc = "2018-2019",
-                            SoTien = 4042485
-                        },
-                        new
-                        {
-                            HocPhiId = "ghrmm",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(4006), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3224), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
                             NamHoc = "2019-2020",
-                            SoTien = 4434875
+                            SoTien = 2902579
                         },
                         new
                         {
-                            HocPhiId = "grzqc",
+                            HocPhiId = "aaxwt",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(4012), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3258), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            NamHoc = "2016-2017",
-                            SoTien = 2219423
+                            NamHoc = "2019-2020",
+                            SoTien = 4057955
                         },
                         new
                         {
-                            HocPhiId = "stkda",
+                            HocPhiId = "vndql",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(4018), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3264), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            NamHoc = "2018-2019",
+                            SoTien = 1971288
+                        },
+                        new
+                        {
+                            HocPhiId = "bhtyl",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3270), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            NamHoc = "2020-2021",
+                            SoTien = 1624935
+                        },
+                        new
+                        {
+                            HocPhiId = "ikkxs",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3277), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
                             NamHoc = "2017-2018",
-                            SoTien = 1211992
+                            SoTien = 1179586
                         },
                         new
                         {
-                            HocPhiId = "brfxh",
+                            HocPhiId = "hktja",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(4079), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3282), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            NamHoc = "2015-2016",
-                            SoTien = 4285444
+                            NamHoc = "2017-2018",
+                            SoTien = 4254557
                         },
                         new
                         {
-                            HocPhiId = "niuks",
+                            HocPhiId = "vfvoj",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(4087), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            NamHoc = "2019-2020",
-                            SoTien = 4113887
-                        },
-                        new
-                        {
-                            HocPhiId = "qmacp",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(4094), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3288), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
                             NamHoc = "2019-2020",
-                            SoTien = 2529264
+                            SoTien = 4523655
                         },
                         new
                         {
-                            HocPhiId = "qxgii",
+                            HocPhiId = "weuoh",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(4100), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3294), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            NamHoc = "2018-2019",
-                            SoTien = 3241740
+                            NamHoc = "2017-2018",
+                            SoTien = 2866170
                         },
                         new
                         {
-                            HocPhiId = "peoyu",
+                            HocPhiId = "qpbev",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(4106), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3299), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            NamHoc = "2017-2018",
+                            SoTien = 4490920
+                        },
+                        new
+                        {
+                            HocPhiId = "ccdwy",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3305), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
                             NamHoc = "2019-2020",
-                            SoTien = 3728433
+                            SoTien = 4304969
                         },
                         new
                         {
-                            HocPhiId = "xzgwd",
+                            HocPhiId = "ldymi",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 843, DateTimeKind.Unspecified).AddTicks(4113), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3310), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            NamHoc = "2017-2018",
+                            SoTien = 2757751
+                        },
+                        new
+                        {
+                            HocPhiId = "ldxdb",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3316), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            NamHoc = "2016-2017",
+                            SoTien = 2836721
+                        },
+                        new
+                        {
+                            HocPhiId = "afyzm",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3322), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
                             NamHoc = "2019-2020",
-                            SoTien = 4103978
+                            SoTien = 4377116
+                        },
+                        new
+                        {
+                            HocPhiId = "vznjh",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3327), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            NamHoc = "2020-2021",
+                            SoTien = 4748683
+                        },
+                        new
+                        {
+                            HocPhiId = "ivfsh",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 799, DateTimeKind.Unspecified).AddTicks(3333), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            NamHoc = "2017-2018",
+                            SoTien = 2875859
                         });
                 });
 
@@ -1158,453 +1158,453 @@ namespace API.Migrations
                     b.HasData(
                         new
                         {
-                            MaMonHoc = "awmwx",
+                            MaMonHoc = "zrubd",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 839, DateTimeKind.Unspecified).AddTicks(4710), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 796, DateTimeKind.Unspecified).AddTicks(9900), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MoTa = "Con chết vẽ biển khoảng ác nón đập mua. Làm mây kim một tô nhà gió. Tám được mua quê áo. Tôi nước dép viết năm hàng bè.\n\nTôi leo được ba thì xe hết bàn gió. Cái đồng bảy lầu. Ghế nghỉ mây bảy.\n\nLàm chìm đạp ác thế bơi. Vàng đâu bạn. Dép hương hương.",
-                            TenMonHoc = "Future Markets Strategist",
+                            MoTa = "Núi đá quê bàn. Ruộng mướn vá. Vẽ quần đồng đá cửa làm em. Áo thôi một hương mượn. Chín hết núi đánh thì trời tô mượn. Bè đã phá thuê mượn.\n\nGiày giày đang làm sáu được xe. Nhà viết hương trời chìm con ghét mây khoảng con. Ngọt hóa hàng tím vẽ thì mướn. Tàu ghế bốn thuyền trăng đá.\n\nĐộc lỗi áo bảy dép hai. Phá ghét may tám á đang thuê cái tôi bàn. Nha mây khâu anh.",
+                            TenMonHoc = "Principal Interactions Designer",
+                            TinChi = 4,
+                            TinChiLyThuyet = 4,
+                            TinChiThucHanh = 0
+                        },
+                        new
+                        {
+                            MaMonHoc = "vcoef",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(671), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Ác quần bàn khoan ghế đỏ yêu vẽ quần. Á áo gì hàng tím. Xe ác á tô vẽ vàng đập khoảng. Thế cái mượn yêu bơi nhà em.\n\nYêu là khoảng tím. Em chìm nhà khoảng chết. May may em. Phá nha bạn. Tủ xe leo ác chỉ ghế anh khoảng núi dép.\n\nChỉ thế á hương đã quần lỗi con dép. Bơi đồng đỏ giày thế nghỉ núi tàu. Mượn hương con chín anh yêu. Xe thuyền bè đỏ dép mua lầu yêu vá. Á tủ chỉ bảy trời.",
+                            TenMonHoc = "Direct Tactics Coordinator",
+                            TinChi = 4,
+                            TinChiLyThuyet = 3,
+                            TinChiThucHanh = 1
+                        },
+                        new
+                        {
+                            MaMonHoc = "wckpd",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(949), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Núi ba hết là hai. Độc mười mười đập. Thích được mua đỏ. Tím xanh nhà nón đập. Tám kim thế mây giày không bảy quê mây.\n\nKhoảng cái tím tím bốn nha ba ừ. Thế máy gì ruộng vá bè con hương hai thì. Gió đồng cửa.\n\nHết tôi xuồng em quê. Bàn đâu được thuê tui bạn đồng lầu. Bốn yêu xuồng khâu cái hương. Hết khoan nghỉ hết giết bàn.",
+                            TenMonHoc = "International Identity Associate",
+                            TinChi = 4,
+                            TinChiLyThuyet = 3,
+                            TinChiThucHanh = 1
+                        },
+                        new
+                        {
+                            MaMonHoc = "euhpn",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(1190), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Đã việc thương tàu gì viết. Máy chết hương. Á thuyền thuyền quê thôi.\n\nGiày hai hết vàng một ác mua khoảng ghế. Biết dép lầu ngọt. Được tủ may ừ. Đâu nón xe.\n\nBàn đâu là mua. Thôi chín áo thôi xanh. Quần nón xanh hai vẽ lỗi chín đá á. Hết tám một. Tàu thương nhà bảy máy thương đá.",
+                            TenMonHoc = "Investor Marketing Manager",
                             TinChi = 3,
                             TinChiLyThuyet = 3,
                             TinChiThucHanh = 0
                         },
                         new
                         {
-                            MaMonHoc = "hzgkx",
+                            MaMonHoc = "edisx",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 839, DateTimeKind.Unspecified).AddTicks(5751), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(1375), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MoTa = "Xuồng vàng tám khoan. Đỏ yêu ghế bốn bảy vẽ đồng đạp. Ghế nghỉ gió một đồng đồng nha một lầu. Ngọt hai việc giết tím bạn đang đâu.\n\nNha là lỗi thích đánh đâu lỗi được. Viết bốn ghét thuê con tím chín đồng xanh độc. Nha dép xe tui việc áo xuồng bè. Ác tám thế chết đã. Á khâu xuồng đá bốn thuê máy chỉ đang khoan. Giày đã ruộng giết vẽ gì mua một xe.\n\nKim đạp ba. Hương bơi quê thương mướn đỏ mượn giày. Tàu leo em phá nhà nước thích hóa. Thích ba bốn.",
-                            TenMonHoc = "International Operations Consultant",
-                            TinChi = 5,
-                            TinChiLyThuyet = 4,
-                            TinChiThucHanh = 1
-                        },
-                        new
-                        {
-                            MaMonHoc = "gjdje",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 839, DateTimeKind.Unspecified).AddTicks(6353), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Ghét bàn cửa đập ngọt mượn tô gì gì xe. Kim lầu chìm viết mướn mây. Bàn khoảng mượn. Thế mượn độc lầu đang. Yêu ác máy sáu núi.\n\nHàng tô gì độc xuồng nghỉ mười không em trời. Hết hết chỉ tím thuyền ba em chín. Đâu leo độc sáu.\n\nRuộng một hết thì giết may tô thế cửa. Quần sáu khoảng đồng nón xuồng ghế độc. Thế thương làm bạn. Lỗi bè vàng ác.",
-                            TenMonHoc = "Dynamic Identity Liaison",
-                            TinChi = 5,
-                            TinChiLyThuyet = 4,
-                            TinChiThucHanh = 1
-                        },
-                        new
-                        {
-                            MaMonHoc = "qilwy",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 839, DateTimeKind.Unspecified).AddTicks(7189), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Trời bè cửa. Khoan máy khoan khâu được. Chìm tàu cái. Tô thì mây xuồng hết hóa. Leo hết núi thích hàng gì đá kim một ừ. Tui đang cửa xe leo đánh cửa cái.\n\nChín mướn xuồng nhà ờ. Hương giày bàn thì xanh đỏ phá thì. Đạp ghét bốn hóa lỗi mua quần chín làm. Yêu thì tui bạn đánh nhà thế.\n\nBơi núi thôi khoan tím vá vàng đập. Đang phá mượn mây đỏ đá sáu. Không đạp tô đang đá gì giết tôi thôi. Lỗi cửa không nước anh thuyền mây.",
-                            TenMonHoc = "Global Data Producer",
+                            MoTa = "Máy cửa giết may hai. Con ba lầu tím chết ngọt leo đồng chìm. Chìm phá thương hết cửa. Sáu giày yêu mây hương. Hàng bạn ghế thì. Ừ bảy may đá.\n\nThuyền vẽ bơi. Cửa bơi sáu. Cái độc thuê ba lầu hương dép áo xe. Hết giày khâu lầu vẽ bốn đá tôi thôi.\n\nMay con sáu xuồng đã viết cái bơi áo. Đập khoảng chín tui. Đâu nghỉ bốn xanh tô. Đỏ trời tôi hóa thì chìm tím ghét ác.",
+                            TenMonHoc = "Internal Marketing Coordinator",
                             TinChi = 3,
                             TinChiLyThuyet = 3,
                             TinChiThucHanh = 0
                         },
                         new
                         {
-                            MaMonHoc = "svxwo",
+                            MaMonHoc = "jxlrb",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 839, DateTimeKind.Unspecified).AddTicks(7735), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(1592), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MoTa = "Thôi yêu thương bảy gì ác một. Con ác nha tủ. Hai hàng ba.\n\nKhoảng tui cái đạp nghỉ quê. Cái một bàn. Hết nước làm tím. Khoảng khâu thương biết ngọt khoan. Tôi dép một đã bàn. Trăng hương hàng mướn cái đập giết khâu.\n\nỪ ba không tủ quê. Mướn con năm. Ghét đánh may áo nghỉ một. Áo thôi bảy hương vá á. Khoảng ruộng trời biết áo. Ruộng tàu tôi dép.",
-                            TenMonHoc = "Customer Paradigm Specialist",
+                            MoTa = "Trăng đá biển yêu nhà ruộng. Xuồng tô bè giày lỗi thuê hết xe đồng chìm. Biển cái ba thích tôi. Xuồng vàng bơi viết.\n\nÁc làm đập. Mướn đang á máy. Hết thế thì lỗi.\n\nYêu bàn máy. Mướn biển nha hết áo ngọt. Ghế việc ừ khoan ừ lầu hàng chín. Mười đỏ khâu núi cái nha ừ thì xe.",
+                            TenMonHoc = "International Applications Administrator",
+                            TinChi = 3,
+                            TinChiLyThuyet = 3,
+                            TinChiThucHanh = 0
+                        },
+                        new
+                        {
+                            MaMonHoc = "tmmnc",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(1788), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Vàng mượn giết bạn trăng ừ. Giết ác kim không đã thuê khâu. Anh tàu núi ác ừ xuồng núi bè làm. Biển dép mượn. Em vàng thôi máy xanh trăng tàu ừ đỏ.\n\nLeo không chìm tủ dép tàu mua đang. Cửa tàu nước khâu trời anh. Hết mượn vẽ ngọt. Đã xe trời thì đập thôi lỗi. Bơi gì nha không máy mượn mây tím.\n\nỜ độc chìm giày em nha. Khoảng ờ gì đâu chết đỏ. Không đánh ngọt hết mướn khâu hóa mượn á. Ừ mây may việc tám mười. Anh ngọt mây làm đã độc tủ. Mượn tám đánh bè yêu dép tủ bạn.",
+                            TenMonHoc = "Global Implementation Engineer",
+                            TinChi = 3,
+                            TinChiLyThuyet = 3,
+                            TinChiThucHanh = 0
+                        },
+                        new
+                        {
+                            MaMonHoc = "gzgzu",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(2066), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Tô thuê mướn trăng quê. Gì hương cửa vàng khoan bàn xe sáu. Bè máy đồng chìm đỏ thôi nghỉ. Thuyền đá ừ núi nha bàn. Khoan tàu ghét con bạn hết khoan mướn.\n\nMua mua hết tủ. Cửa năm nhà độc bàn là. Nón thương đánh khoan trời đâu.\n\nLà anh vá đang nón. Yêu con biết bè. Lầu biển được. Bảy bảy xuồng thuê trời leo hết. Leo yêu hàng tui. Thôi ác biển khoảng vàng đập bơi vàng.",
+                            TenMonHoc = "National Solutions Technician",
+                            TinChi = 4,
+                            TinChiLyThuyet = 4,
+                            TinChiThucHanh = 0
+                        },
+                        new
+                        {
+                            MaMonHoc = "sccta",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(2282), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Vàng khoan hóa khoan bơi hai tôi bốn làm thế. Nước xe thôi việc. Dép hết quần độc kim phá vá. Chìm ừ ác thuê. Mua thì mượn máy độc là ờ hóa thế. Bàn đang đã phá khâu thì nha chín.\n\nChìm tôi giết hàng khâu. Em là sáu nghỉ ờ cửa nghỉ ghế đang máy. Bạn trăng tím. Ruộng khoan đỏ leo đập ruộng thích.\n\nXe thì vẽ biết tím biển. Biển không gì. Khoảng em nón. Khoan thuyền ờ mua.",
+                            TenMonHoc = "International Communications Associate",
                             TinChi = 5,
                             TinChiLyThuyet = 5,
                             TinChiThucHanh = 0
                         },
                         new
                         {
-                            MaMonHoc = "ttymw",
+                            MaMonHoc = "lxkxb",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 839, DateTimeKind.Unspecified).AddTicks(8172), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(2511), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MoTa = "Núi ruộng biển mười bạn thương bạn ghét. Dép xanh phá hóa trăng đỏ hàng ừ chìm. Vá lỗi không tui hương thuê hóa. Vẽ tàu làm không gì chìm cửa.\n\nCửa ghét nghỉ. Năm leo xuồng tủ bơi bàn yêu. Yêu được việc ác mây một đang. Nón chết ba ruộng nghỉ. Giày trời ừ biển khâu. Xe việc tô.\n\nDép hai viết bơi nón. Xe áo cái. Xanh hết bốn gì tám ác một kim thì.",
-                            TenMonHoc = "Dynamic Security Associate",
-                            TinChi = 4,
-                            TinChiLyThuyet = 4,
-                            TinChiThucHanh = 0
-                        },
-                        new
-                        {
-                            MaMonHoc = "gfvda",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 839, DateTimeKind.Unspecified).AddTicks(8429), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Gió anh ngọt thương vàng khoan. Tàu bảy không ghế đã việc. Con lầu quê hết đánh hương chết ghét. Trời á khoảng. Vẽ hàng đã không đập cửa năm thôi phá cửa. Chín tím thích hết xanh ờ máy dép.\n\nThế viết đập. Gió nha gió áo ác nước hết. Vàng hết ngọt. Lỗi xe bàn tui nghỉ ờ vá đồng. Máy leo đánh yêu bạn.\n\nĐồng biết mười tám xe. Hàng vàng đá đâu trời bơi. Viết ờ tủ giết con. Khâu ác á ghế đánh yêu thích thôi mướn.",
-                            TenMonHoc = "Product Research Agent",
+                            MoTa = "Tàu thương gì mười thế quần. Khoảng giết hai trời khâu đang tím đá. Khâu đánh lỗi lầu đạp. Đang ghế chết là phá đang ghế ba. Vá đá chỉ hết bảy độc bạn đang.\n\nĐánh mướn tàu thuyền đánh kim đá giết là đã. Mướn độc xuồng yêu được biết hết giết hóa. Tui đánh thuyền bàn được khoảng vẽ hàng trăng.\n\nQuần nha quê tám nha đâu gì. Tui đập may bảy mười mướn chỉ hương trăng. Bạn bạn giết đạp dép xe á mua đồng. Thì thế đánh lầu.",
+                            TenMonHoc = "Future Accountability Analyst",
                             TinChi = 3,
                             TinChiLyThuyet = 3,
                             TinChiThucHanh = 0
                         },
                         new
                         {
-                            MaMonHoc = "eaveh",
+                            MaMonHoc = "xfltv",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 839, DateTimeKind.Unspecified).AddTicks(8739), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(2733), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MoTa = "Phá mượn viết khâu hai xe xe. Anh biển quê trời nghỉ khoan đánh khoan hết sáu. Bốn hết tui nón độc không bạn hết. Hóa đá thế mười.\n\nChỉ cửa đỏ tôi đỏ trăng yêu viết ghế. Thích tô mây ba thôi nước biết vẽ nha. Thích mượn hóa bè áo vàng đâu gió thương nước. Vá may không. Hàng hàng khoảng.\n\nÁo thế núi khâu tôi thuyền không. Bốn bảy được leo núi đang biển con bốn nón. Một tủ đang gì.",
-                            TenMonHoc = "Corporate Tactics Planner",
+                            MoTa = "Mây chìm đạp nón đạp không. Đâu quần trăng. Đánh ngọt làm hương. Làm khoảng mượn phá là cái ghét quê đồng hóa. Leo thôi núi đánh biển thương ruộng tôi.\n\nÁ cửa tô sáu bơi ngọt bảy nha. Máy đang nghỉ ờ hàng giết đánh gió. Chín tàu cái bơi hương trời tôi thế. Gì dép quần hóa. Tô lỗi đỏ biển vá thích núi anh hết thương.\n\nỜ đỏ đang chìm bạn đá thôi hóa kim. Chìm chết máy giày. Con tàu kim. Bè đang nghỉ nghỉ ừ tám đâu.",
+                            TenMonHoc = "Dynamic Implementation Facilitator",
+                            TinChi = 3,
+                            TinChiLyThuyet = 3,
+                            TinChiThucHanh = 0
+                        },
+                        new
+                        {
+                            MaMonHoc = "qybaj",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(2988), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Ngọt ruộng lầu sáu kim ngọt. Đạp cái hai mượn á hai. Nha độc giày một. Việc hết việc lỗi mướn bè. Vẽ núi trời lỗi sáu áo sáu. Đỏ gì em độc đâu đánh thì ruộng.\n\nÁ leo biết thôi lỗi đâu. Thế vá vẽ hương độc thuyền. Trời máy không viết lầu chỉ. Đá yêu xe tủ cái trăng nón đá đá ác. Là lỗi hết việc không.\n\nNón chìm tôi hương tím hóa khâu thương thuê dép. Sáu á bạn chín thuê ba may hai độc bàn. Tím lỗi chỉ khoan leo. Đỏ cái bơi sáu á đâu trăng đang.",
+                            TenMonHoc = "Regional Creative Associate",
+                            TinChi = 3,
+                            TinChiLyThuyet = 3,
+                            TinChiThucHanh = 0
+                        },
+                        new
+                        {
+                            MaMonHoc = "cwxik",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(3248), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Làm giày nha hai nước tủ nón chỉ mua. Hết lỗi vá vá đập chìm. Anh viết làm nhà đã hai con nghỉ ghét.\n\nQuê tôi bơi bàn tôi. Gì khoảng hóa hóa. Tám gió khâu thế ruộng nước. Nước mua tô thuyền gió viết vá khâu.\n\nLeo tám thôi cái xuồng mây thôi ghế. Mây thuyền giết trăng xe đâu ừ dép độc nhà. Ba gió tô mượn hóa chìm xe.",
+                            TenMonHoc = "Lead Factors Architect",
+                            TinChi = 3,
+                            TinChiLyThuyet = 3,
+                            TinChiThucHanh = 0
+                        },
+                        new
+                        {
+                            MaMonHoc = "sdpgk",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(3435), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Thích dép mua. Giết đánh thích xanh nghỉ phá. Ừ thì tám.\n\nMáy thì không hóa khoan đạp may. Máy vá khâu hết. Độc tôi cửa hết giày hóa chỉ. Viết hết thích thương.\n\nKhông leo nước xe mây tủ thương. Thuyền tôi vẽ đã. Nón chỉ một bè đang gì bơi chìm á. Anh đã khâu tui tô ờ xe việc.",
+                            TenMonHoc = "Customer Accountability Liaison",
+                            TinChi = 5,
+                            TinChiLyThuyet = 4,
+                            TinChiThucHanh = 1
+                        },
+                        new
+                        {
+                            MaMonHoc = "eamyl",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(3611), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Không đỏ mua em quê tôi tàu. Được thì đồng chỉ ghế lầu ác. Thuyền đã chỉ ba. Máy lỗi tô đang đồng xe vá.\n\nLeo đá khoan đập đỏ ác. Làm chìm đã leo chín tàu bạn kim chín áo. May chín thôi máy thì việc giết con ừ. Hết không bơi trời xuồng việc mười. Phá bạn chỉ hàng. Kim cửa hết hết đánh thích máy ghế bốn mượn.\n\nXanh nghỉ ghế viết đạp nhà trời ruộng. Quần cái tui hết thế may áo thế thế. Mười đánh nghỉ may tui. Tím gì ruộng mây thì độc thích cửa quê nghỉ.",
+                            TenMonHoc = "Dynamic Mobility Administrator",
+                            TinChi = 3,
+                            TinChiLyThuyet = 3,
+                            TinChiThucHanh = 0
+                        },
+                        new
+                        {
+                            MaMonHoc = "fmhmw",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(3871), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Trời áo khoan giày vẽ mây tủ ừ chín bạn. Thích nước ba mây lầu đạp. Nghỉ ngọt đang lỗi thuyền thương nhà tôi tám.\n\nXe hai không vá chìm gì. Nón gì nước tô tui đá. Ừ nhà tám ừ ờ hóa. Tím cái tô biển. Ruộng hương mướn gì khâu biết.\n\nMây sáu nghỉ viết. Áo thuyền khoảng làm con thương không mây bạn khâu. Trời dép đồng thuyền. Việc trăng làm đang đá quần vá vẽ đập hết.",
+                            TenMonHoc = "District Markets Consultant",
+                            TinChi = 5,
+                            TinChiLyThuyet = 3,
+                            TinChiThucHanh = 2
+                        },
+                        new
+                        {
+                            MaMonHoc = "xutvn",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(4078), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Đánh dép may cửa ghế quần biển. Bốn ác xe được bảy đạp con may tám áo. Đồng ừ nhà bàn đồng ừ xuồng đánh nha quê. Bơi hương biển nghỉ nhà yêu.\n\nThì bè phá. Bè độc nước ác yêu mây á. Đạp bơi thuyền cửa yêu khoảng đánh cái. Thương thế tui mây mượn khâu ghét tô ờ độc. Đang đánh mua quê. Ruộng con anh nón xuồng hết.\n\nLỗi chết biết tủ đánh được mười em thì hương. Đạp chết hàng cửa bạn vẽ. Sáu đã em là bảy đánh anh. Mười áo cái leo khoan bè.",
+                            TenMonHoc = "Dynamic Division Planner",
                             TinChi = 5,
                             TinChiLyThuyet = 5,
                             TinChiThucHanh = 0
                         },
                         new
                         {
-                            MaMonHoc = "jodzw",
+                            MaMonHoc = "vtzht",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 839, DateTimeKind.Unspecified).AddTicks(9005), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(4344), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MoTa = "Đang phá ờ giày khoan lỗi tủ trời nghỉ đá. Thế bàn cái. Chín tô ghế bốn ba tô ghế tô khoan viết. Ác bè ghế lầu gì được. Hương nha khâu quần chết hai.\n\nQuê viết là bơi hàng nhà mua bè thế. Khoan xe một con. Ghế dép làm ruộng.\n\nÁ lỗi mây được nón đã nước. Ghế được nha hai thích chỉ đập hóa. Em cửa em á lỗi hết vàng đánh lỗi thôi. Đá năm khoảng ờ trời vàng em gió chết xe. Bạn năm nghỉ vẽ tui được lỗi anh bè lầu. Sáu cái ngọt quần là tô đánh đồng khoảng gió.",
-                            TenMonHoc = "Internal Usability Representative",
+                            MoTa = "Đập giày mười vá núi thuê ừ xe tủ đang. Á quê khoảng tám đá khoan ác hai em. Đâu thôi làm. Mua việc tủ mướn nước đánh trăng. Tám một thích quần đập làm biển em mây.\n\nBiết ngọt bảy nhà chỉ á đâu. Lầu xe gì đâu việc thôi bảy nha. Lỗi viết nghỉ quần năm được hương gió. Á ruộng biển ngọt xanh hết.\n\nBa em mười hết may đã cửa chín cửa một. Không tím phá hết được bơi trời tui thương. Phá mướn khoảng đỏ đã là tôi chỉ con em. Gì hóa may chỉ đồng ruộng em. Ghế tô xuồng ngọt yêu tôi đang lỗi.",
+                            TenMonHoc = "Future Data Analyst",
                             TinChi = 4,
                             TinChiLyThuyet = 3,
                             TinChiThucHanh = 1
                         },
                         new
                         {
-                            MaMonHoc = "xawjt",
+                            MaMonHoc = "xgjli",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 839, DateTimeKind.Unspecified).AddTicks(9369), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(4615), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MoTa = "Chìm á độc ba mượn chín được. Nón thích vẽ hương đỏ. Biển ba anh khoan đánh yêu ờ kim việc.\n\nBiết tàu chỉ thì một phá quần. Trời trăng thương mượn nước bảy đạp hết anh. Tàu là hương thế.\n\nNúi mười biển núi đạp tím. Đánh nha hết ác biển tui. Trời được thuê.",
-                            TenMonHoc = "Product Quality Executive",
-                            TinChi = 3,
-                            TinChiLyThuyet = 3,
+                            MoTa = "Viết tàu tàu trời đạp viết làm đánh. Á máy khâu. Cửa ghế chỉ tím xuồng bàn giày. Xanh đồng giết đập ruộng nón ngọt. Ngọt đang chìm thế sáu ngọt khoảng viết. Độc vàng ác quê ba nón quê.\n\nNha tôi đâu thương anh độc nón tôi cửa. Thích được bè khâu độc chỉ tô trời chín. Ruộng nước đỏ á tủ bạn.\n\nĐồng mượn giết trăng bè đánh may. Xe trời hương hết ờ đâu quê nghỉ. Mây lầu đồng trời giết dép bơi tui xe. Ngọt tàu hết không xe.",
+                            TenMonHoc = "Direct Factors Specialist",
+                            TinChi = 5,
+                            TinChiLyThuyet = 4,
+                            TinChiThucHanh = 1
+                        },
+                        new
+                        {
+                            MaMonHoc = "acprp",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(4844), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Bốn em thôi tám cái được may ba ghét. Ờ cái xe ba đang tàu nghỉ lầu xe ba. Giày xuồng vàng nhà. Một con nha mướn bơi ác đá đập lỗi.\n\nViệc đã phá một. Thì yêu hai mua. Mây bàn giết bốn gió leo khâu đỏ.\n\nMua lỗi chết hóa là một. Ngọt xe một bảy ngọt. Bạn là độc vàng mây không. Mười sáu là khoảng việc em thích nhà. Khoan mượn mua viết kim sáu con em tàu.",
+                            TenMonHoc = "Global Intranet Producer",
+                            TinChi = 5,
+                            TinChiLyThuyet = 5,
                             TinChiThucHanh = 0
                         },
                         new
                         {
-                            MaMonHoc = "fnseb",
+                            MaMonHoc = "yrjem",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 839, DateTimeKind.Unspecified).AddTicks(9563), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(5071), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MoTa = "Em quần nón tôi ghét giày anh. Áo thì lỗi khoan. Gì áo bè tủ thuyền ghế hàng thế xe.\n\nChìm giết hết gió được đâu kim bè. Ghét đập yêu tui một tôi khâu năm mua. Là xanh hương năm á đã việc. Hết nghỉ núi trời. Vá mây thôi biển nhà thuyền ừ đạp thuê áo. Nhà hàng núi.\n\nTui ừ tui là xanh đạp hết viết đánh thuyền. Viết vá may mướn chết. Thôi tủ khoan con. Đã trời đồng. Đã bàn áo lỗi thôi độc áo tủ thuyền. Cửa vá mây gió.",
-                            TenMonHoc = "Chief Response Representative",
+                            MoTa = "Tím phá mây dép. Quần biển viết thích. Quê biết chín đã đập thuyền tui hương thế lầu. Cửa hết không thích núi hai đâu gió hai á. Thuê biển đã áo ngọt chết.\n\nXe ờ xe. Bạn cửa thôi chín hương việc lỗi. Hai leo anh tủ bàn quê không phá tô.\n\nGiày ờ tủ chết gió nước hàng đang. Quê xuồng áo hai đã sáu quần hết thích trăng. Nước năm ngọt thì hai xe. Nhà đập xanh.",
+                            TenMonHoc = "Forward Response Administrator",
                             TinChi = 4,
                             TinChiLyThuyet = 4,
                             TinChiThucHanh = 0
                         },
                         new
                         {
-                            MaMonHoc = "tzyok",
+                            MaMonHoc = "woatt",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 839, DateTimeKind.Unspecified).AddTicks(9876), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(5267), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MoTa = "Ác mướn đập tôi nón ờ. Cửa xanh không hàng. May yêu anh mướn. Cửa ba nước hết.\n\nLeo biển trăng ghế bàn. Đạp trời giết. Chín được là năm anh. Sáu trăng leo em gì. Đỏ ba vẽ nước đá đã không.\n\nLeo mây tím thương độc. Chết quê mua đâu ờ giày đồng thuê dép bơi. Ghét nghỉ nước xuồng thương vẽ. Lỗi đâu trời đập cửa chín thích thương áo. Dép đâu chết ừ bạn mây tô yêu một đâu.",
-                            TenMonHoc = "Dynamic Assurance Liaison",
-                            TinChi = 3,
-                            TinChiLyThuyet = 3,
-                            TinChiThucHanh = 0
-                        },
-                        new
-                        {
-                            MaMonHoc = "ttruf",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(147), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Đánh tủ việc tám. Vàng mây ruộng đang tủ mướn máy hết. Không núi một kim thế lỗi kim vẽ một tám. Nón tôi tám đánh kim đồng sáu. Mười kim khoảng nón thuyền dép. Hàng bốn là biển sáu bàn là chìm hai.\n\nKhoan khoan mua thế đồng á. Sáu chỉ ghét tàu may bơi. Kim yêu quần một thương hai nha nhà chết con. Máy nghỉ khoảng hết xe viết nha. Là xe mướn. Được gió lỗi á bàn.\n\nKhâu ba núi thuyền giày thích mua tui thương đâu. Mây á trời khoan độc tô được. May á bảy giết. Hết thích thôi tám cái.",
-                            TenMonHoc = "Legacy Operations Technician",
-                            TinChi = 3,
-                            TinChiLyThuyet = 3,
-                            TinChiThucHanh = 0
-                        },
-                        new
-                        {
-                            MaMonHoc = "aqhpq",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(458), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Mua lầu thương anh chỉ tím thuê. Khoan kim nha trời cái hương áo bè chín đánh. Giày thương năm cửa bốn đạp bạn xe ghế. Ruộng quê á hết hàng tám khoảng phá lầu bàn. Hết thuê tui vàng may gì năm nha đâu nghỉ. Ghế mướn tím.\n\nMua bốn đâu đá quần ừ. Ruộng á ừ phá cái anh được giết leo khâu. Ghế ừ tô đã xuồng nhà hai. Tôi ba xuồng ừ. Chỉ không chìm hết đâu giày biết á. Đạp chỉ bạn tô lỗi con á thương kim ác.\n\nVẽ mười vá quần yêu. Quê ờ giết bàn biển. Khâu mây leo.",
-                            TenMonHoc = "Customer Communications Supervisor",
+                            MoTa = "Bốn phá hương đâu là đập quần ngọt. Bè vá hàng bè đạp. Khoảng con đập biển trăng. Giết việc em thì giết thì thôi dép. Đạp ba viết đồng biển đỏ khoảng ngọt lỗi. Thuê hết vàng kim đã ghét.\n\nAnh chìm tàu bàn chìm làm. Tím ghét chết tui đập ờ. Khoan thôi máy đập con nghỉ đã. Vá thì khoảng mây đập hóa em một lỗi bạn. Tủ đã đá dép hương hai.\n\nỜ quê ác đạp con. Kim tôi sáu sáu xe ghế. Đánh bè xanh xanh khoảng bơi đá may thì kim. Nha bè mây thôi hàng khoan chết nước ngọt mướn.",
+                            TenMonHoc = "District Configuration Supervisor",
                             TinChi = 4,
+                            TinChiLyThuyet = 4,
+                            TinChiThucHanh = 0
+                        },
+                        new
+                        {
+                            MaMonHoc = "cwesk",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(5534), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Vàng thì leo may. Giày mướn khoan nha đồng. Đồng bàn làm nón một thương bảy. Con trời ghế ruộng. Mướn đã ngọt trăng biết biết. Giày khoan máy vàng chìm hai đã vá.\n\nThì được được đánh phá đánh quê tím. Khâu ngọt đạp ba chín làm. Gió trời quần nghỉ giày bạn đang đồng. Tô ruộng xanh tím đạp hết đồng làm vá. Được áo bơi đá chín tàu đạp trời. Con một bơi bơi là mua ừ.\n\nMướn em không khoan. Đã biết ờ leo ngọt sáu được. Xanh chín á tàu. Khoan thì không ngọt khâu. Đã biển xanh biết.",
+                            TenMonHoc = "Global Intranet Liaison",
+                            TinChi = 3,
                             TinChiLyThuyet = 3,
+                            TinChiThucHanh = 0
+                        },
+                        new
+                        {
+                            MaMonHoc = "fflgp",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(5806), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Gì nha thôi bạn nghỉ ừ khâu. Ác quần mười giày cửa làm. Con ghét đồng leo thôi thôi tủ bàn. Ghế thôi nghỉ quê kim làm. Cửa ghế mướn ruộng thì mượn con trời thôi làm.\n\nVẽ ừ vá độc một ba nghỉ áo quê sáu. Thương tôi vẽ làm. Hóa đánh nón không bơi anh đã xuồng. Ghế tủ một thuê lỗi đạp chín bàn độc giày. Viết bàn trời tủ bè biết độc dép. Giết cửa khoan thế.\n\nNước khâu mây đá biết biết kim. Phá tôi quần được khâu hai. Bàn ác tô thuyền. Khoảng hai ờ may đánh mượn làm. Thế cửa bảy thì thuyền tôi. Thương cửa mua lầu á ờ mây mua.",
+                            TenMonHoc = "Corporate Program Technician",
+                            TinChi = 4,
+                            TinChiLyThuyet = 4,
+                            TinChiThucHanh = 0
+                        },
+                        new
+                        {
+                            MaMonHoc = "nsqnb",
+                            CreatedBy = "",
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(6105), new TimeSpan(0, 7, 0, 0, 0)),
+                            DeletedBy = "",
+                            IsActive = true,
+                            IsDelete = false,
+                            LastUpdatedBy = "",
+                            MoTa = "Áo thuê đánh núi con ờ được. Viết khoảng hết không. Xe hàng anh sáu vàng quê tôi thì á á. Thế khoảng ờ khâu. Ruộng tui ba con khoan là giết.\n\nQuần viết chết yêu. Thế biết thôi trời. Trời nhà ác vá trời nón việc quê chết. Đá dép tui ghét nghỉ ác chín tám quần. Đá khoảng áo ờ con phá vẽ quần ghét. Trăng ghét ghế thích phá mướn ừ năm con.\n\nMướn bạn trăng đánh xe không. Lầu máy đá giày đạp ừ xuồng ghế ruộng. Máy xe nhà quê. Bảy dép biết. Xuồng quần lầu hóa gió đập á.",
+                            TenMonHoc = "Human Research Liaison",
+                            TinChi = 5,
+                            TinChiLyThuyet = 4,
                             TinChiThucHanh = 1
                         },
                         new
                         {
-                            MaMonHoc = "xbzts",
+                            MaMonHoc = "xfwwm",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(805), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(6433), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MoTa = "Một mượn nhà tím khoan hết ba quê. Vẽ khoan thuê thì biển tám bảy. Giết đập giết xuồng ghét không nước á chết thế. Bạn gì bè em một chìm áo đập thích. Nước bàn nón bốn tám ác.\n\nThì gió tím nha đánh may chín trời. Mua chìm tám thuyền leo ờ. Chín đỏ sáu. Đồng núi mướn nghỉ chết. Nhà xanh năm hết vá thôi kim bốn hàng chín. Năm bảy viết hết tím ờ.\n\nLeo tôi thế thương kim mượn bốn leo ừ làm. Làm chín mười. Thuyền xuồng thích em vàng dép gì anh. Thuyền thuê mây tủ ruộng ruộng đã. Chín em mây hương phá năm anh.",
-                            TenMonHoc = "District Integration Agent",
+                            MoTa = "Chín bạn phá mướn khoảng. Trăng thì tui đạp mướn nhà một. Đá biển kim độc chỉ đạp việc đã ngọt tủ. Mây mướn quần khoảng xuồng áo á tủ.\n\nĐạp biển được. Làm khoảng biển. Tui xanh yêu đồng chết cửa đập tím vẽ. May mua năm ngọt cửa ghét biết nón.\n\nTô hóa tôi ba. Xanh tủ nhà đánh hóa. Bàn khoan em mướn khoảng mượn tám. Tô ruộng lỗi tím.",
+                            TenMonHoc = "Investor Applications Supervisor",
                             TinChi = 3,
                             TinChiLyThuyet = 3,
                             TinChiThucHanh = 0
                         },
                         new
                         {
-                            MaMonHoc = "eqopu",
+                            MaMonHoc = "kwoaw",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(1149), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(6652), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MoTa = "Nha đạp sáu bàn đang. Trăng núi khoảng ừ chỉ. Chín núi thế được ờ ngọt yêu. Vá đã á hóa ghế tím nghỉ đánh. Tủ nghỉ hết nước máy hết mướn nha kim gió. Giết đâu khoan nón đồng thế hàng đồng.\n\nMây cửa nghỉ yêu ác ghế trăng nghỉ. Em gió ba hết đá bơi. Khoảng đá đập đỏ xe bảy.\n\nHết tủ quần nhà giết giày. Đạp thích đạp ruộng vá ngọt dép nha. Sáu thuê tủ. Anh biển tui ba.",
-                            TenMonHoc = "Customer Research Architect",
+                            MoTa = "Mười nghỉ biển cái. Ác thế ờ hàng tám bảy lỗi. Thương đồng làm. Xanh thuyền đang quê gió vẽ trăng hai đỏ. Biển đánh nha chìm viết vàng mười nước đập một. Bốn nghỉ đang giết máy hương.\n\nNón thôi ác. Làm hết đã tủ không chín yêu. Dép giết khoan bơi tôi. Lầu bàn yêu yêu trời thích. Mượn ghế đang mượn áo ừ đập ờ. Nha mượn áo việc đánh ừ đồng phá đồng.\n\nThì đâu chỉ đập. Con bơi ngọt đang kim. Leo hai thôi đâu thế mướn khoan ngọt thuê. Đánh trăng nhà chín chết hóa nhà ngọt.",
+                            TenMonHoc = "Legacy Interactions Director",
                             TinChi = 5,
                             TinChiLyThuyet = 3,
                             TinChiThucHanh = 2
                         },
                         new
                         {
-                            MaMonHoc = "tvyrd",
+                            MaMonHoc = "tojev",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(1439), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(6953), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MoTa = "Vẽ giết thương. Đang nón quê nha leo chín. Áo hương tô xe mướn khâu. Bạn vẽ năm giày ghét.\n\nÁc tô mướn áo hết xuồng xe cửa. Quê chết bảy thì chìm không biết đánh ba. Gì bốn yêu. Áo trăng hết nước quê leo đâu vá đâu. Việc thôi bè việc bảy đang tím.\n\nGì trăng leo xuồng núi giết không tui ba ác. Tủ hết nghỉ sáu. Đánh tàu bè mượn hết lỗi nha yêu. Nghỉ ờ quần viết ghế cái khoảng ruộng bảy trời. Mây áo hàng may ruộng quần viết gì bè.",
-                            TenMonHoc = "Direct Program Planner",
-                            TinChi = 5,
-                            TinChiLyThuyet = 4,
-                            TinChiThucHanh = 1
-                        },
-                        new
-                        {
-                            MaMonHoc = "ywzvt",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(1698), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Ruộng tui đập thuê tàu đánh vàng chỉ viết. Nước xe gì hàng. Trăng đã đồng gió ghét kim. Hương quần vẽ tôi. Bạn xe tôi sáu ừ xe nón. Khoan tàu đạp.\n\nThế chín tui đập trăng ngọt. Mua giày vá giày con núi. Đá cái cái. Ác anh hàng ác sáu. May một trăng xuồng máy thuê hết dép tủ.\n\nLầu hết thích mượn việc anh anh máy mượn. Gió một nước cửa mướn được thuê ác. Một xe tàu bốn đã em.",
-                            TenMonHoc = "Central Factors Designer",
+                            MoTa = "Gió tui thế nha. Ghét ác đã đỏ con ghét đá bốn. Biển ruộng gió. Gió ờ thuyền ác.\n\nBa con tàu nha may thương bạn được thế đồng. Tui hàng đập gì hóa là tôi là. Ba vẽ thế được.\n\nMây ba biển thế trời hàng hết. Đã lỗi là tô việc ừ ờ bơi thương. Khoảng chín ba. Là lỗi bè.",
+                            TenMonHoc = "Forward Branding Associate",
                             TinChi = 5,
                             TinChiLyThuyet = 3,
                             TinChiThucHanh = 2
                         },
                         new
                         {
-                            MaMonHoc = "ipvkq",
+                            MaMonHoc = "xafhp",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(2017), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(7227), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MoTa = "Ba ừ đang khâu giết năm mười chìm may đánh. Tủ đỏ ghét con đồng nha tô ba. Bè thuyền chết biển hết trăng bàn tám nhà.\n\nChết gió thuê mây. Chỉ ờ em quê biết khoảng đỏ xanh. Vàng vá lầu tô ba trăng thuyền ác nón. Khoảng vàng chín cửa vá mười tô cửa tím bảy. Được đạp vá hết đánh hương đạp thế mười. Ghế bảy thuyền chìm cửa á nước khâu khoảng.\n\nHóa năm thuê. Khâu độc trăng thì. Lầu giày gì ruộng tui đá chín thuê quần hóa. Trời con thế. Một con ghét.",
-                            TenMonHoc = "Principal Quality Assistant",
+                            MoTa = "Bàn đá kim mây phá nha vá thì năm xanh. Nghỉ ừ đá độc dép khâu nón trăng hương đạp. Nón bàn đập gì khâu trăng tui chìm tủ. Hết đỏ núi. Năm yêu tôi lỗi thương mười ghế xanh chỉ á.\n\nỪ giết chết. Hương khoảng bốn. Làm đạp lầu khoan trăng máy độc. Tô chết làm cửa cửa.\n\nBa tui vàng thuyền trời một hóa hai nước. Hàng vẽ yêu ờ biển bảy đá đỏ. Bảy ba ờ gì đá. Dép con sáu thuê khoảng leo bè chỉ vẽ.",
+                            TenMonHoc = "District Research Planner",
                             TinChi = 3,
                             TinChiLyThuyet = 3,
                             TinChiThucHanh = 0
                         },
                         new
                         {
-                            MaMonHoc = "moore",
+                            MaMonHoc = "hlcun",
                             CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(2336), new TimeSpan(0, 7, 0, 0, 0)),
+                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 21, 10, 51, 797, DateTimeKind.Unspecified).AddTicks(7468), new TimeSpan(0, 7, 0, 0, 0)),
                             DeletedBy = "",
                             IsActive = true,
                             IsDelete = false,
                             LastUpdatedBy = "",
-                            MoTa = "Hương nước hương vàng cái tàu hết. Á mua lầu quê viết thì đánh ghét sáu bạn. Không ừ việc. Đâu đang bạn đã hóa gió.\n\nHương ruộng á tím khâu phá máy. Nha thuê đá tàu áo là. Quê nghỉ ác. Biết ờ mướn hóa khoảng xe thì giết. Đập hóa ác á leo mây ghét ừ tui.\n\nThì sáu biển thuyền trời bàn leo máy trời. Dép dép đập đá ghét ngọt đánh leo lỗi ác. Ờ ba tô máy. Thế mượn mười thì con con bàn leo. Chín leo xe ruộng mua khoan lỗi ừ hóa. Vàng quần thương thôi gì em ác chết.",
-                            TenMonHoc = "Dynamic Identity Planner",
-                            TinChi = 3,
-                            TinChiLyThuyet = 3,
-                            TinChiThucHanh = 0
-                        },
-                        new
-                        {
-                            MaMonHoc = "cqsnz",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(2637), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Vẽ đá cái giày mây sáu mười á. Xanh thôi đồng đồng xuồng tàu vàng năm. Con vá thì khâu thuyền dép leo đâu khoảng. Phá đã biển đang đã mười bốn cái. Việc chết vá khoan tôi quần.\n\nThuyền thuyền một hai. Vẽ thì cái. Con tô đồng. Vẽ bàn đồng.\n\nTím ờ bơi ờ ghét bè mua tám. Biển ba khâu giày con hàng giết ruộng ờ mây. Mua độc ghét. Mướn lầu em bè cái nón trăng. Nước đánh đỏ một hết chín lỗi biển.",
-                            TenMonHoc = "Direct Solutions Specialist",
-                            TinChi = 3,
-                            TinChiLyThuyet = 3,
-                            TinChiThucHanh = 0
-                        },
-                        new
-                        {
-                            MaMonHoc = "hekvj",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(2935), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Ruộng được ác năm nón quần đạp. Anh bốn gió. Hàng ngọt yêu gì máy biết làm.\n\nEm đồng hóa bơi tui vá nha đập ác vá. Đang không anh thôi thì anh ừ. Tàu viết ngọt ừ.\n\nNón thích nón thương ruộng gió đập tím chết. Ba biết tám độc giết bàn em. Vàng ghét bè. Cái đánh nước.",
-                            TenMonHoc = "Regional Intranet Analyst",
-                            TinChi = 5,
-                            TinChiLyThuyet = 3,
-                            TinChiThucHanh = 2
-                        },
-                        new
-                        {
-                            MaMonHoc = "tswcu",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(3126), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Xe đập mua. Thế yêu nha không đã leo đá thích tôi. Thuê mua đồng biết xe nhà mười khâu thuyền kim. Gió hết giày.\n\nBốn vẽ mười á đập xe tôi một đá. Vẽ gì bè sáu hàng may. Á bạn may kim. Thích biển núi vẽ em tôi đạp nước leo. Tui ác dép bốn tàu ba đập quê ghế.\n\nYêu quần mượn không hai leo. Giết quần bàn thì con tím hương. Quê quê á hết thì ờ nhà gió thương em. Ác chỉ nghỉ gì tủ á quê ghét bạn bơi.",
-                            TenMonHoc = "Senior Operations Analyst",
-                            TinChi = 5,
-                            TinChiLyThuyet = 3,
-                            TinChiThucHanh = 2
-                        },
-                        new
-                        {
-                            MaMonHoc = "tmmyv",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(3451), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Hết lỗi tàu. Chết thế con cửa. Nha trời tàu trăng á quê con đỏ hương cửa.\n\nĐạp khâu áo. Đã là trăng mua tàu vẽ gì. Thích lầu quần tám viết.\n\nKhoảng tím năm tôi tám chín. Nón biết đỏ kim bè đánh bàn mười yêu. Biết khâu hóa. Ruộng vá đâu. Giày khâu nha việc đập tím việc ừ tôi trời. Thích dép thuyền.",
-                            TenMonHoc = "District Solutions Designer",
-                            TinChi = 4,
-                            TinChiLyThuyet = 4,
-                            TinChiThucHanh = 0
-                        },
-                        new
-                        {
-                            MaMonHoc = "aqjww",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(3663), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Nghỉ anh hương lầu yêu mượn tủ không quần. Em việc cái. Biết được khoan chín vàng.\n\nQuần thuyền trời hết đập nước anh trăng bạn. Chín gió hương hàng đạp thế tím. Giết hàng xuồng ờ hết mây anh chìm.\n\nĐánh mướn ghét em. Gì ờ ghét. Ghét hóa làm yêu ác. Gì giày trăng tủ. Gì đá khâu làm.",
-                            TenMonHoc = "Senior Web Executive",
-                            TinChi = 5,
-                            TinChiLyThuyet = 4,
-                            TinChiThucHanh = 1
-                        },
-                        new
-                        {
-                            MaMonHoc = "ofpvt",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(3868), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Ghế may đỏ ừ làm con thì. Tôi viết đánh. Sáu hết bè. Thế khâu đang mua giết đánh quê khoảng áo. Viết chín ờ. Khâu nón nghỉ bàn một viết độc phá đập.\n\nThế ghét bạn làm lỗi. Tô khoan hết may ác tủ đang tui. Hàng ghét đập khoan cái đang vá nước. Tô ghét đạp viết tím ba trăng đã thuyền.\n\nBa quần đang đã ruộng ghế. Chỉ bạn giết độc đã. Bốn giày chín. Chết nón ba ruộng hàng đập tôi đã may năm. Thì lầu độc thì đạp vá.",
-                            TenMonHoc = "Customer Metrics Assistant",
-                            TinChi = 4,
-                            TinChiLyThuyet = 4,
-                            TinChiThucHanh = 0
-                        },
-                        new
-                        {
-                            MaMonHoc = "hpvsj",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(4178), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Hết không cửa tím đâu hóa. Xuồng sáu hương hết trời thì lỗi con. Mười lầu khoan. Em đâu leo mua tím yêu giày.\n\nNha anh đánh việc giày. Bốn xe bảy ghế biết mượn vẽ nhà. Bè biển thương thương độc. Thích xuồng mượn xuồng thế cửa biết đá. Kim trăng lầu gì phá việc.\n\nMượn khoan tủ giết. Bảy vẽ bốn bàn khoảng leo núi hóa. Em thôi ghét được tui may anh.",
-                            TenMonHoc = "Global Functionality Analyst",
+                            MoTa = "Cái khoảng hóa đá tủ hai. Kim hương thuê á ruộng leo đã. Bơi thuê bè mua. Vàng bốn thích. Tím á xanh hai núi được thôi áo việc.\n\nMay làm chỉ hết lỗi. Chỉ may hết hàng. Mướn áo hết tám thôi. Nón mua độc leo yêu.\n\nLà ừ tô ruộng áo sáu một mua. Bốn vá gì trời mướn mướn tô. Việc mướn hóa mây làm năm mười.",
+                            TenMonHoc = "District Program Planner",
                             TinChi = 4,
                             TinChiLyThuyet = 3,
                             TinChiThucHanh = 1
-                        },
-                        new
-                        {
-                            MaMonHoc = "feakz",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(4413), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Em tủ leo ba làm lỗi tôi vá. Đá mua tui. Chín hai chỉ ờ mây năm đã nhà độc kim. Lầu năm vàng. May khâu giày hết bàn nha việc nón. Trăng ruộng ruộng.\n\nKhoan làm ờ trời việc chín. Nhà thôi xe. Núi nha xanh trăng nước đập hai anh vàng. Thôi sáu thì trăng bảy leo ghế nước chỉ chỉ.\n\nBiết việc hàng vá mướn. Năm mướn nhà tím thương yêu. Khoảng hết xanh chết nước đập.",
-                            TenMonHoc = "Dynamic Metrics Representative",
-                            TinChi = 5,
-                            TinChiLyThuyet = 4,
-                            TinChiThucHanh = 1
-                        },
-                        new
-                        {
-                            MaMonHoc = "rvkbh",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(4691), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Đồng vàng nón chìm á không tàu thế quê. Leo tô đạp leo mua. Gì hàng khoan đỏ quê sáu đá mây lầu. Ừ bạn đang thế khoan gió đã.\n\nNúi ghét ghét tám. Là khâu thích biết bơi biển phá thuyền mây. Vẽ vàng xe thế ừ chết. Thôi nước khoảng leo xanh xe mua hết nón.\n\nVàng vẽ lỗi. Thôi tám bơi giày. Cửa ba bàn xe. Mua em ba gió đạp đang bơi. Gì nước việc núi biết cái.",
-                            TenMonHoc = "Chief Integration Director",
-                            TinChi = 5,
-                            TinChiLyThuyet = 4,
-                            TinChiThucHanh = 1
-                        },
-                        new
-                        {
-                            MaMonHoc = "wjssz",
-                            CreatedBy = "",
-                            CreatedTime = new DateTimeOffset(new DateTime(2024, 9, 27, 15, 50, 18, 840, DateTimeKind.Unspecified).AddTicks(4926), new TimeSpan(0, 7, 0, 0, 0)),
-                            DeletedBy = "",
-                            IsActive = true,
-                            IsDelete = false,
-                            LastUpdatedBy = "",
-                            MoTa = "Con nước áo ghét viết độc ừ thế hai bơi. Được ba đỏ. Giết leo quần đang ba gì mười mua nha đập.\n\nKhoan đâu bảy khâu bè lầu giết. Được áo khâu mười yêu đập không đánh bốn là. Đồng tím viết thương bốn. Chín ờ áo anh nha tím. Tô một cái.\n\nHết leo bàn gì. Làm bơi nón máy nón kim đánh áo. Tàu giày không. Viết gió nước khoan núi. Con may mua bàn khoan. Trăng năm em vá dép khâu nón mây.",
-                            TenMonHoc = "Global Program Developer",
-                            TinChi = 4,
-                            TinChiLyThuyet = 4,
-                            TinChiThucHanh = 0
                         });
                 });
 
