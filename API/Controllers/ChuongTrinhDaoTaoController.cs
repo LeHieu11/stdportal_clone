@@ -42,34 +42,41 @@ namespace API.Controllers
         public async Task<ActionResult<ChuongTrinhDaoTao>> 
         Test(string id)
         {
+            // var CTDT = await _context.ChuongTrinhDaoTao
+            //     .Select(ctdt => new ChuongTrinhDaoTaoDTO
+            //     {
+            //         ChuongTrinhDaoTaoId = ctdt.ChuongTrinhDaoTaoId,
+            //         HeDaoTao = ctdt.HeDaoTao,
+            //         Nganh = ctdt.Nganh,
+            //         ChuyenNganh = ctdt.ChuyenNganh,
+            //         NienKhoa = ctdt.NienKhoa,
+            //         ChuongTrinhDaoTaoChiTiet = ctdt.ChuongTrinhDaoTaoChiTiets
+            //             .Select(ctdtct => new ChuongTrinhDaoTaoChiTietDTO
+            //             {
+            //                 HocKy = ctdtct.HocKy,
+            //                 MaMonHoc = ctdtct.MonHocMaMonHoc,
+            //                 TenMonHoc = ctdtct.MonHoc.TenMonHoc,
+            //                 MoTa = ctdtct.MonHoc.MoTa,
+            //                 TinChi = ctdtct.MonHoc.TinChi,
+            //                 TinChiLyThuyet = ctdtct.MonHoc.TinChiLyThuyet,
+            //                 TinChiThucHanh = ctdtct.MonHoc.TinChiThucHanh,
+            //                 NamHoc = ctdtct.HocPhi.NamHoc,
+            //                 SoTien = ctdtct.HocPhi.SoTien,
+            //             })
+            //             .ToList()
+            //     })
+            //     .FirstOrDefaultAsync(ctdt => ctdt.ChuongTrinhDaoTaoId == id);
             var CTDT = await _context.ChuongTrinhDaoTao
-                .Select(ctdt => new ChuongTrinhDaoTaoDTO
-                {
-                    ChuongTrinhDaoTaoId = ctdt.ChuongTrinhDaoTaoId,
-                    HeDaoTao = ctdt.HeDaoTao,
-                    Nganh = ctdt.Nganh,
-                    ChuyenNganh = ctdt.ChuyenNganh,
-                    NienKhoa = ctdt.NienKhoa,
-                    ChuongTrinhDaoTaoChiTiet = ctdt.ChuongTrinhDaoTaoChiTiets
-                        .Select(ctdtct => new ChuongTrinhDaoTaoChiTietDTO
-                        {
-                            HocKy = ctdtct.HocKy,
-                            MaMonHoc = ctdtct.MonHocMaMonHoc,
-                            TenMonHoc = ctdtct.MonHoc.TenMonHoc,
-                            MoTa = ctdtct.MonHoc.MoTa,
-                            TinChi = ctdtct.MonHoc.TinChi,
-                            TinChiLyThuyet = ctdtct.MonHoc.TinChiLyThuyet,
-                            TinChiThucHanh = ctdtct.MonHoc.TinChiThucHanh,
-                            NamHoc = ctdtct.HocPhi.NamHoc,
-                            SoTien = ctdtct.HocPhi.SoTien,
-                        })
-                        .ToList()
-                })
+                .AsSplitQuery()
+                .Include(ctdt => ctdt.ChuongTrinhDaoTaoChiTiets)
+                .ThenInclude(ctdtct => ctdtct.MonHoc)
+                .Include(ctdt => ctdt.ChuongTrinhDaoTaoChiTiets)
+                .ThenInclude(ctdtct => ctdtct.HocPhi)
                 .FirstOrDefaultAsync(ctdt => ctdt.ChuongTrinhDaoTaoId == id);
 
             if (CTDT == null) return NotFound("CTDT not found");
             
-            return Ok(CTDT);
+            return Ok(_mapper.Map<ChuongTrinhDaoTaoDTO>(CTDT));
         }
     }
 }
