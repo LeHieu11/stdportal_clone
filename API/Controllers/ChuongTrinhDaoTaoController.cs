@@ -68,6 +68,7 @@ namespace API.Controllers
             //     .FirstOrDefaultAsync(ctdt => ctdt.ChuongTrinhDaoTaoId == id);
             var CTDT = await _context.ChuongTrinhDaoTao
                 .AsSplitQuery()
+                .AsNoTracking()
                 .Include(ctdt => ctdt.ChuongTrinhDaoTaoChiTiets)
                 .ThenInclude(ctdtct => ctdtct.MonHoc)
                 .Include(ctdt => ctdt.ChuongTrinhDaoTaoChiTiets)
